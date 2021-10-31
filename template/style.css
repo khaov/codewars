@@ -1,0 +1,24 @@
+body {
+  margin:0;
+  padding: 50px 25px 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 span {
+  font-size: 0.6em;
+  color: #c2c4c3;
+}
+
+a:link,
+a:visited {
+    border-bottom: 1px solid rgba(0,137,255,.3);
+    color: #0089ff;
+    text-decoration: none;
+    transition: color .3s ease,border-color .3s ease;
+}
+
+a:hover {
+  border-color: rgba(244,18,36,.3);
+  color: #f41224;
+}
