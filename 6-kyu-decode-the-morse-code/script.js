@@ -59,7 +59,7 @@ const MORSE_CODE = {
 };
 
 decodeMorse = function(morseCode){
-  return morseCode.split('   ').map(function (word, index, array){
+  return morseCode.split('   ').map(function (word){
     return word.split(' ').map(function (letter){
       return MORSE_CODE[letter];
     }).join('');
