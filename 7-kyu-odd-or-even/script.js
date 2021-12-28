@@ -6,13 +6,13 @@ function oddOrEven(array) {
   if (array.length !== 0) {
 
     array.reduce(function(item, prev){
-      return summ = prev + item
+      return summ = prev + item;
     }, 0);
 
     if (Math.abs(summ)%2) {
-      return result = 'odd'
+      return result = 'odd';
     } else {
-      return result = 'even'
+      return result = 'even';
     }
   } else {
     return result = 'even';
