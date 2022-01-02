@@ -1,3 +1,5 @@
+// Посмотреть заметку в index.html
+
 // Solution:
 
 function validBraces(braces){
@@ -10,8 +12,10 @@ function validBraces(braces){
     const leftBraceIndex = leftBraces.indexOf(item);
 
     if (leftBraceIndex > -1) {
+      // Если элемент «открывающий», помещаем его в массив
       bracesStack.push(item);
     } else {
+      // Если элемент закрывающий»
       let lastBraceItem = bracesStack[bracesStack.length-1];
       const rightBraceIndex = rightBraces.indexOf(item);
       const rightBracePair = leftBraces[rightBraceIndex];
@@ -20,12 +24,13 @@ function validBraces(braces){
         bracesStack.pop();
       } else {
         // Пара не совпала, добавляем «закрывающий» элемент в массив «открывающих»,
-        // делая невозможной проверку на с следующей итерации
+        // делая невозможной (ломая) проверку на с следующей итерации.
         bracesStack.push(item);
       }
     }
   });
 
+  // Если все пары последовательно совпали, массив будет пустым
   return bracesStack.length === 0;
 }
 

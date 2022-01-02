@@ -10,6 +10,14 @@ h1 span {
   color: #c2c4c3;
 }
 
+p {
+  color: #303133;
+}
+
+p.note{
+  color: #7d7d7d;
+}
+
 a:link,
 a:visited {
     border-bottom: 1px solid rgba(0,137,255,.3);
