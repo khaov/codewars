@@ -5,32 +5,34 @@
 body {
   margin:0;
   padding: 50px 25px 50px;
+  background-color: #303133;
   font-family: 'Inter', 'Arial', sans-serif;
+  color: #efefef;
   text-align: center;
 }
 
 h1 span {
   font-size: 0.6em;
-  color: #c2c4c3;
+  color: #969896;
 }
 
 p {
-  color: #303133;
+  line-height: 1.5em;
 }
 
 p.note{
-  color: #7d7d7d;
+  color: #969896;
 }
 
 a:link,
 a:visited {
-    border-bottom: 1px solid rgba(0,137,255,.3);
-    color: #0089ff;
+    border-bottom: 1px solid rgba(103,149,222,.3);
+    color: #6795de;
     text-decoration: none;
-    transition: color .3s ease,border-color .3s ease;
+    transition: color .3s ease, border-color .3s ease;
 }
 
 a:hover {
-  border-color: rgba(244,18,36,.3);
-  color: #f41224;
+  border-bottom: 1px solid rgba(187,67,44,.3);
+  color: #bb432c;
 }
