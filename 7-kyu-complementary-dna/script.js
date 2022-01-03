@@ -1,18 +1,30 @@
 // Solution:
 
 function DNAStrand(dna) {
+  const pairs = {
+    'A':'T',
+    'T':'A',
+    'C':'G',
+    'G':'C'
+  };
+
+  // return dna.split('').map(function(item) {
+  //   switch (item) {
+  //     case 'A':
+  //       return 'T';
+  //     case 'T':
+  //       return 'A';
+  //     case 'G':
+  //       return 'C';
+  //     case 'C':
+  //       return 'G';
+  //   }
+  // }).join('');
+
   return dna.split('').map(function(item) {
-    switch (item) {
-      case 'A':
-        return 'T';
-      case 'T':
-        return 'A';
-      case 'G':
-        return 'C';
-      case 'C':
-        return 'G';
-    }
+    return pairs[item];
   }).join('');
+
 }
 
 // Sample Tests:
