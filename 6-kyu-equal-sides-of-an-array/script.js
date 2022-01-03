@@ -13,12 +13,6 @@ function findEvenIndex(arr) {
     }
   }
 
-  function sideSize(array) {
-    return array.reduce(function(sum, item) {
-      return sum + item
-    })
-  }
-
   arr.forEach(function(item, index, array) {
     const leftSide = array.slice(0, index);
     const rightSide = array.slice(index + 1, array.length);
