@@ -22,7 +22,5 @@ function firstNonConsecutive (arr) {
 
 // Sample Tests:
 
-
 firstNonConsecutive([-6,-5,-4,-3,-2,-1,0,1,2,3]) // null
 firstNonConsecutive([1,2,3,4,6,7,8]) // 6
-
