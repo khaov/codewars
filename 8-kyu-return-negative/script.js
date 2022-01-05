@@ -1,7 +1,8 @@
 // Solution:
 
 function makeNegative(num) {
-  return num <= 0 ? num : -num;
+  // return num <= 0 ? num : -num;
+  return -Math.abs(num);
 }
 
 // Sample Tests:
