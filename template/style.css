@@ -12,8 +12,54 @@ body {
 }
 
 h1 span {
+  margin: 32px 0;
   font-size: 0.6em;
   color: #969896;
+}
+
+ul,
+ol {
+  display: inline-block;
+  margin: 8px 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li,
+ol li {
+  position: relative;
+  padding-left: 24px;
+}
+
+ul li:before,
+ol li:before {
+  position: absolute;
+  left: 0;
+  color: #969896;
+}
+
+ul > li::before{
+  top: 8px;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #969896;
+}
+
+ol {
+  counter-reset: ordered-list;
+}
+ol > li::before{
+  top: 0px;
+  content: counter(ordered-list) ".";
+  counter-increment: ordered-list;
+}
+
+
+li {
+  margin: 8px 0;
+  text-align: left;
 }
 
 p {
