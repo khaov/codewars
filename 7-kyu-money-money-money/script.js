@@ -1,12 +1,31 @@
 // Solution:
 
 function calculateYears(principal, interest, tax, desired) {
-  let years = 0;
-  while (principal < desired) {
-    principal = (principal + principal * interest) - (principal * interest * tax);
-    years++
+
+  // let years = 0;
+  // while (principal < desired) {
+  //   principal = (principal + principal * interest) - (principal * interest * tax);
+  //   years++
+  // }
+  // return years;
+
+  let y = 0;
+  let b = principal;
+
+  const i = interest;
+  const t = tax;
+  const d = desired;
+
+  function accountBalance (b, i, t) {
+    return b = (b + b * i) - (b * i * t);
   }
-  return years;
+
+  while (b < d) {
+    y++
+    b = accountBalance(b, i, t);
+  }
+
+  return y;
 }
 
 // Sample Tests:
