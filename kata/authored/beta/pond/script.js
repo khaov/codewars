@@ -21,8 +21,21 @@
 
 function pond(w, h, x, y) {
 
-  
+  let matrix = []
 
+  for (let i = 1; i <= h; i++) {
+    matrix.push([]);
+  }
+
+  matrix.forEach(function(item){
+    for (let i = 1; i <= w; i++) {
+      item.push([]);
+    }
+  });
+
+  matrix[x].splice(1, 0, [0]);
+
+  matrix
 }
 
 // Sample Tests:
