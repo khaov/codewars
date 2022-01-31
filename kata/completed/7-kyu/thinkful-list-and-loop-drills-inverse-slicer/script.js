@@ -1,13 +1,7 @@
 // Solution:
 
 function inverseSlice(items, a, b) {
-
-  const leftSide = items.slice(0, a);
-  const reightSide = items.slice(b, items.length);
-
-  reightSide.forEach((number) => leftSide.push(number));
-
-  return leftSide
+  return items.slice(0, a).concat(items.slice(b));
 }
 
 // Sample Tests:
