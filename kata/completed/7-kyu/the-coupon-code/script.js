@@ -1,9 +1,10 @@
 // Solution:
 
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
-  return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+//return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+  return enteredCode === correctCode && new Date(expirationDate) >= new Date(currentDate)
 }
-
+new Date
 // Sample Tests:
 
 checkCoupon("123", "123", "July 9, 2015", "July 9, 2015")       //  true
