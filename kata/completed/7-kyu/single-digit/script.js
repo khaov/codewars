@@ -5,6 +5,7 @@ function singleDigit(n) {
   if (n < 10) {
     return n
   } else {
+
     let result = n;
 
     result = result.toString(2).split('').reduce(function(sum, num){
