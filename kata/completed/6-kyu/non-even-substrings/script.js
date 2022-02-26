@@ -1,21 +1,25 @@
 // Solution:
 
-const BigNumber = require('bignumber.js');
+// bignumber.js library solution:
 
-function solve(s) {
-  const substringsArray = [];
+// const BigNumber = require('bignumber.js');
 
-  for (let i = 0; i <= s.length; i++) {
-    for (let j = i + 1; j <= s.length; j++) {
-      let substring = new BigNumber(s.slice(i, j));
-      if (substring.modulo(2)*1===1) {
-        substringsArray.push(substring);
-      }
-    }
-  }
+// function solve(s) {
+//   const substringsArray = [];
 
-  return substringsArray.length;
-}
+//   for (let i = 0; i <= s.length; i++) {
+//     for (let j = i + 1; j <= s.length; j++) {
+//       let substring = new BigNumber(s.slice(i, j));
+//       if (substring.modulo(2)*1===1) {
+//         substringsArray.push(substring);
+//       }
+//     }
+//   }
+
+//   return substringsArray.length;
+// }
+
+// BigInt data type solution (data type is not supported by Codewars):
 
 // function solve(s) {
 //   const substringsArray = [];
@@ -31,6 +35,18 @@ function solve(s) {
 
 //   return substringsArray.length;
 // }
+
+function solve(s){
+  var counter = 0;
+
+  for (let i = 0; i < s.length; ++i) {
+    if (+s[i] % 2 !== 0) {
+      counter += i+1;
+    }
+  }
+
+  return counter;
+}
 
 // Sample Tests:
 
