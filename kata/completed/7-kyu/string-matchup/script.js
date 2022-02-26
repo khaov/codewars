@@ -1,25 +1,27 @@
 // Solution:
 
 function solve(a,b){
-  let result = [];
+  // let result = [];
 
-  b.forEach(function(secondArrayElement){
-    if (a.includes(secondArrayElement)) {
-      let counter = 0;
+  // b.forEach(function(secondArrayElement){
+  //   if (a.includes(secondArrayElement)) {
+  //     let counter = 0;
 
-      a.forEach(function(firstArrayElement){
-        if (firstArrayElement === secondArrayElement) {
-          counter ++
-        }
-      });
+  //     a.forEach(function(firstArrayElement){
+  //       if (firstArrayElement === secondArrayElement) {
+  //         counter ++
+  //       }
+  //     });
 
-      result.push(counter);
-    } else {
-      result.push(0);
-    }
-  });
+  //     result.push(counter);
+  //   } else {
+  //     result.push(0);
+  //   }
+  // });
 
-  return result
+  // return result
+
+  return b.map(n => a.filter(m => m === n).length);
 }
 
 // Sample Tests:
