@@ -2,6 +2,7 @@
 
 function diamond(n){
   const diamondDiameter = n;
+
   if (n <= 0 || n % 2 === 0) {
     return null;
   } else {
