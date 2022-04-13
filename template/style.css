@@ -3,11 +3,33 @@
 @import url(../vendor/fonts.css);
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin:0;
   padding: 50px 25px 50px;
   background-color: #303133;
   font-family: 'Inter', 'Arial', sans-serif;
   color: #efefef;
+}
+
+section {
+  width: 100%;
+  max-width: 650px;
+}
+
+.instructions {
+  text-align: left;
+}
+
+.notes {
+  margin: 12px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, .125);
+  text-align: center;
+}
+
+h1 {
+  max-width: 850px;
   text-align: center;
 }
 
@@ -56,7 +78,6 @@ ol > li::before{
   counter-increment: ordered-list;
 }
 
-
 li {
   margin: 8px 0;
   text-align: left;
@@ -81,4 +102,11 @@ a:visited {
 a:hover {
   border-bottom: 1px solid rgba(187,67,44,.3);
   color: #bb432c;
+}
+
+code {
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, .125);
+  border-radius: 2px;
+  font-family: 'Inter', 'Arial', sans-serif;
 }
