@@ -71,6 +71,7 @@ ul > li::before{
 ol {
   counter-reset: ordered-list;
 }
+
 ol > li::before{
   top: 0px;
   content: counter(ordered-list) ".";
