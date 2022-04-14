@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>(7 kyu) Speed Control</title>
+        <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Speed Control
+        </h1>
+        <section class="instructions">
+          <p>In John's car the GPS records every <code>s</code> seconds the distance travelled from an origin (distances are measured in an arbitrary but consistent unit). For example, below is part of a record with <code>s = 15</code>:</p>
+
+<pre>
+  <code>
+    x = [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25]
+  </code>
+</pre>
+
+          <p>The sections are:</p>
+
+<pre>
+  <code>
+    0.0-0.19, 0.19-0.5, 0.5-0.75, 0.75-1.0, 1.0-1.25, 1.25-1.50, 1.5-1.75, 1.75-2.0, 2.0-2.25
+  </code>
+</pre>
+
+        <p>We can calculate John's average hourly speed on every section and we get:</p>
+
+<pre>
+  <code>
+    [45.6, 74.4, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0]
+  </code>
+</pre>
+
+          <p>Given <code>s</code> and <code>x</code> the task is to return as an integer the <code>*floor*</code> of the maximum average speed per hour obtained on the sections of <code>x</code>. If x length is less than or equal to 1 return <code>0</code> since the car didn't move.</p>
+
+          <h2>Example:</h2>
+          <p>with the above data your function <code>gps(s, x)</code> should return <code>74</code></p>
+
+          <h2>Note:</h2>
+          <p class="note">With floats it can happen that results depends on the operations order. To calculate hourly speed you can use: <code>(3600 * delta_distance) / s</code>.</p>
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/5a751a31373c2e645b000096/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
