@@ -112,6 +112,7 @@ code {
 }
 
 pre {
+  overflow: auto;
   background-color: rgba(0, 0, 0, .4);
   border-radius: 4px;
   line-height: 1.75em;
