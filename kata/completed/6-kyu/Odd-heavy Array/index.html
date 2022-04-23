@@ -11,7 +11,20 @@
             <span>(6 kyu)</span> Odd-heavy Array
         </h1>
         <section class="instructions">
+          <p>An array is defined to be <code>odd-heavy</code> if it contains at least one odd element and every element whose value is <code>odd</code> is greater than every even-valued element.</p>
 
+          <p>eg.</p>
+<pre>
+  <code>
+    Array [11,4,9,2,8] is odd-heavy
+    because:- its odd elements [11,9] are greater than all the even elements [4,2,8]
+
+    Array [11,4,9,2,3,10] is not odd-heavy
+    because:- one of it's even element 10 from [4,2,10] is greater than two of its odd elements [9,3] from [11,9,3]
+  </code>
+</pre>
+
+          <p>write a function called <code>isOddHeavy</code> or <code>is_odd_heavy</code> that accepts an integer array and returns <code>true</code> if the array is <code>odd-heavy</code> else return <code>false</code>.</p>
         </section>
         <section class="notes">
           <p>
