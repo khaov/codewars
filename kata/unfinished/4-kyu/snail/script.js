@@ -4,7 +4,9 @@ snail = function(array) {
 
   let y = array.length - 1;
   let x = array.length - 1;
-  
+
+  // Посчитать повороты и изменение направления.
+
 }
 
 // Sample Tests:
