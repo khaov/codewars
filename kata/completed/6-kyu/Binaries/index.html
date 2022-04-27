@@ -11,6 +11,56 @@
             <span>(6 kyu)</span> Binaries
         </h1>
         <section class="instructions">
+          <p>Let us take a string composed of decimal digits: <code>"10111213"</code>. We want to code this string as a string of <code>0</code> and <code>1</code> and after that be able to decode it.</p>
+
+          <p>To code we decompose the given string in its decimal digits (in the above example: <code>1 0 1 1 1 2 1 3</code>) and we will code each digit.</p>
+
+          <h2>Coding process to code a number n expressed in base 10:</h2>
+
+          <p>For each digit <code>d</code> of <code>n</code></p>
+
+          <ul>
+            <li>a) Let <code>k</code> be the number of bits of <code>d</code></li>
+            <li>b) Write <code>k-1</code> times the digit <code>0</code> followed by the digit <code>1</code></li>
+            <li>c) Write digit <code>d</code> as a binary string, with the rightmost bit being the least significant</li>
+            <li>d) Concat the result of b) and c) to get the coding of <code>d</code></li>
+          </ul>
+
+          <p>At last concatenate all the results got for the digits of <code>n</code>.</p>
+
+          <h2>An example</h2>
+
+          <p>So we code <code>0</code> as <code>10</code>, <code>1</code> as <code>11</code>, <code>2</code> as <code>0110</code>, <code>3</code> as <code>0111</code> ... etc...</p>
+
+          <p>With the given process, the initial string <code>"10111213"</code> becomes: <code>"11101111110110110111"</code> resulting of concatenation of <code>11 10 11 11 11 0110 11 0111</code>.</p>
+
+          <h2>Task:</h2>
+
+          <ul>
+            <li>Given <code>strng</code> a string of digits representing a decimal number the function <code>code(strng)</code> should return the coding of <code>strng</code> as explained above.</li>
+            <li>Given a string <code>strng</code> resulting from the previous coding, decode it to get the corresponding decimal string.</li>
+          </ul>
+
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    code("77338855") --> "001111001111011101110001100000011000001101001101"
+    code("77338")  --> "0011110011110111011100011000"
+    code("0011121314") --> "1010111111011011011111001100"
+
+    decode("001111001111011101110001100000011000001101001101") -> "77338855"
+    decode("0011110011110111011100011000") -> "77338"
+    decode("1010111111011011011111001100") -> "0011121314"
+  </code>
+</pre>
+
+          <h2>Notes</h2>
+
+          <ul>
+            <li>SHELL: The only tested function is <code>decode</code>.</li>
+            <li>Please could you ask before translating.</li>
+          </ul>
 
         </section>
         <section class="notes">

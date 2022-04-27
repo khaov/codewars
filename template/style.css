@@ -60,7 +60,7 @@ ol li:before {
 }
 
 ul > li::before{
-  top: 8px;
+  top: 12px;
   content: "";
   display: block;
   width: 4px;
@@ -83,6 +83,7 @@ li {
   text-align: left;
 }
 
+li,
 p {
   line-height: 1.75em;
 }
