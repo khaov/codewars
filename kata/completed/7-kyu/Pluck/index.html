@@ -12,7 +12,17 @@
             <span>(7 kyu)</span> Pluck
         </h1>
         <section class="instructions">
+          <p>Implement a function which takes a sequence of objects and a property name, and returns a sequence containing the named property of each object.</p>
 
+          <p>For example:</p>
+<pre>
+  <code>
+    pluck([{a:1}, {a:2}], 'a')      <span class="note">// -> [1,2]</span>
+    pluck([{a:1, b:3}, {a:2}], 'b') <span class="note">// -> [3, undefined]</span>
+  </code>
+</pre>
+
+          <p>If an object is missing the property, you should just leave it as <code>undefined/None</code> in the output array.</p>
         </section>
         <section class="notes">
           <p>
