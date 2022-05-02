@@ -13,6 +13,8 @@ body {
   color: #efefef;
 }
 
+/* Sections */
+
 section {
   width: 100%;
   max-width: 650px;
@@ -28,6 +30,8 @@ section {
   text-align: center;
 }
 
+/* Headlines */
+
 h1 {
   max-width: 850px;
   text-align: center;
@@ -38,6 +42,8 @@ h1 span {
   font-size: 0.6em;
   color: #969896;
 }
+
+/* Lists */
 
 ul,
 ol {
@@ -88,9 +94,32 @@ p {
   line-height: 1.75em;
 }
 
-.note{
-  color: #969896;
+/* Tags */
+
+.tags {
+  display: flex;
+  margin: 16px 0 8px;
 }
+
+.tags li {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, .1);
+  font-size: 10px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.tags li:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.tags li::before {
+  display: none;
+}
+
+/* Links */
 
 a:link,
 a:visited {
@@ -104,6 +133,8 @@ a:hover {
   border-bottom: 1px solid rgba(187,67,44,.3);
   color: #bb432c;
 }
+
+/* Code */
 
 code {
   padding: 2px 4px;
@@ -122,4 +153,8 @@ pre {
 pre code {
   padding: 0;
   border: 0;
+}
+
+.note{
+  color: #969896;
 }
