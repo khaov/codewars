@@ -1,15 +1,15 @@
 // Solution:
 
 function tribonacci(signature,n){
-  const tribonacciiArray = signature;
+  let tribonacciArray = signature;
 
   if (n > 3) {
     for(let i = 3; i < n; i++) {
-      tribonacciiArray.push(tribonacciiArray[i - 3] + tribonacciiArray[i - 2] + tribonacciiArray[i - 1]);
+      tribonacciArray.push(tribonacciArray[i - 3] + tribonacciArray[i - 2] + tribonacciArray[i - 1]);
     }
-    return tribonacciiArray;
+    return tribonacciArray;
   } else if (n > 0 && n <= 3) {
-    return tribonacciiArray.slice(0, n);
+    return tribonacciArray.slice(0, n);
   } else {
     return [];
   }
