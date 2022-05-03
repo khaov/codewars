@@ -89,6 +89,7 @@ li {
   text-align: left;
 }
 
+blockquote,
 li,
 p {
   line-height: 1.75em;
@@ -133,6 +134,16 @@ a:visited {
 a:hover {
   border-bottom: 1px solid rgba(187,67,44,.3);
   color: #bb432c;
+}
+
+/* Blockquote */
+
+blockquote {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 0 0 16px;
+  border-left: 2px solid rgba(255, 255, 255, .125);
+  font-style: italic;
 }
 
 /* Code */
