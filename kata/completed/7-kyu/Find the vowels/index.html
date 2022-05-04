@@ -12,7 +12,24 @@
             <span>(7 kyu)</span> Find the vowels
         </h1>
         <section class="instructions">
+          <p>We want to know the index of the vowels in a given word, for example, there are two vowels in the word super (the second and fourth letters).</p>
+          <p>So given a string "super", we should return a list of <code>[2, 4]</code>.</p>
 
+<pre>
+  <code>
+    Some examples:
+    Mmmm  => []
+    Super => [2,4]
+    Apple => [1,5]
+    YoMama -> [1,2,4,6]
+  </code>
+</pre>
+
+          <h2>NOTES</h2>
+          <ul>
+            <li>Vowels in this context refers to: a e i o u y (including upper case)</li>
+            <li>This is indexed from <code>[1..n]</code> (not zero indexed!)</li>
+          </ul>
         </section>
         <section class="notes">
           <p>
