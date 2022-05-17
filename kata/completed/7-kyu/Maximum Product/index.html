@@ -12,7 +12,47 @@
             <span>(7 kyu)</span> Maximum Product
         </h1>
         <section class="instructions">
+          <h2>Task</h2>
+          <p>Given an array of integers, <b>Find the maximum product</b> obtained from multiplying 2 adjacent numbers in the array.</p>
+          <hr>
 
+          <h2>Notes</h2>
+          <ul>
+            <li><b>Array/list</b> size is at least 2.</li>
+            <li><b>Array/list</b> numbers could be a mixture of positives, negatives also zeroes.</li>
+          </ul>
+          <hr>
+
+          <h2>Input >> Output Examples</h2>
+
+<pre>
+  <code>
+    adjacentElementsProduct([1, 2, 3]); ==> return 6
+  </code>
+</pre>
+
+          <h2>Explanation:</h2>
+          <p><b>The maximum product</b> obtained from multiplying <code>2 * 3 = 6</code>, and they're adjacent numbers in the array.</p>
+          <hr>
+
+<pre>
+  <code>
+    adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]); ==> return 50
+  </code>
+</pre>
+
+          <h2>Explanation:</h2>
+          <p><b>Max product</b> obtained from multiplying <code>5 * 10 = 50</code>.</p>
+          <hr>
+
+<pre>
+  <code>
+    adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]) ==> return -14
+  </code>
+</pre>
+
+          <h2>Explanation:</h2>
+          <p><b>The maximum product</b> obtained from multiplying <code>-2 * 7 = -14</code>, and <b>they're adjacent numbers in the array</b>.</p>
         </section>
         <section class="notes">
           <p>
