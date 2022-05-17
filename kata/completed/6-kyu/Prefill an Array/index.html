@@ -12,7 +12,38 @@
             <span>(6 kyu)</span> Prefill an Array
         </h1>
         <section class="instructions">
+          <p>Create the function <code>prefill</code> that returns an array of <code>n</code> elements that all have the same value <code>v</code>. See if you can do this <i>without</i> using a loop.</p>
 
+          <p>You have to validate input:</p>
+
+          <ul>
+            <li>
+              <code>v</code> can be <i>anything</i> (primitive or otherwise)
+            </li>
+            <li>
+              if <code>v</code> is ommited, fill the array with <code>undefined</code>
+            </li>
+            <li>
+              if <code>n</code> is 0, return an empty array
+            </li>
+            <li>
+              if <code>n</code> is anything other than an <b>integer</b> or <b>integer-formatted</b> string (e.g. <code>'123'</code>) that is <code>>=0</code>, throw a <code>TypeError</code>
+            </li>
+          </ul>
+
+          <p>When throwing a <code>TypeError</code>, the message should be <code>n is invalid</code>, where you replace <code>n</code> for the actual value passed to the function.</p>
+
+          <p>Code Examples</p>
+
+<pre>
+  <code>
+    prefill(3,1) <span class="note">--> [1,1,1]</span>
+    prefill(2,"abc") <span class="note">--> ['abc','abc']</span>
+    prefill("1", 1) <span class="note">--> [1]</span>
+    prefill(3, prefill(2,'2d')) <span class="note">--> [['2d','2d'],['2d','2d'],['2d','2d']]</span>
+    prefill("xyz", 1) <span class="note">--> throws TypeError with message "xyz is invalid"</span>
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
