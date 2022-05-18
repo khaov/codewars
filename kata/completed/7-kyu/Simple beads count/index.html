@@ -6,13 +6,35 @@
       <title>(7 kyu) Simple beads count</title>
       <link rel="icon" href="../../../../template/favicon.ico" />
       <link rel="stylesheet" href="../../../../template/style.css">
+
+      <style>
+        .blue { color: blue; }
+        .red { color: red; }
+      </style>
     </head>
     <body>
         <h1>
             <span>(7 kyu)</span> Simple beads count
         </h1>
         <section class="instructions">
+          <p>Two red beads are placed between every two blue beads. There are N blue beads. After looking at the arrangement below work out the number of red beads.</p>
 
+          <p>
+            <span class="blue">@</span>
+            <span class="red">@@</span>
+            <span class="blue">@</span>
+            <span class="red">@@</span>
+            <span class="blue">@</span>
+            <span class="red">@@</span>
+            <span class="blue">@</span>
+            <span class="red">@@</span>
+            <span class="blue">@</span>
+            <span class="red">@@</span>
+            <span class="blue">@</span>
+          </p>
+
+          <p>Implement <code>count_red_beads(n)</code> (in PHP <code>count_red_beads($n)</code>; in Java, Javascript, TypeScript, C, C++ <code>countRedBeads(n)</code>) so that it returns the number of <span class="red">red</span> beads.</p>
+          <p>If there are less than 2 blue beads return 0.</p>
         </section>
         <section class="notes">
           <p>
