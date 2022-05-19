@@ -7,11 +7,11 @@ function duplicates(array) {
     !(index === array.lastIndexOf(number)) || !(index === array.indexOf(number))
   );
 
-  const uniquedNumbers = duplicatedNumbers.filter((number, index, array) =>
+  const uniqueNumbers = duplicatedNumbers.filter((number, index, array) =>
     index === array.lastIndexOf(number)
   ).sort((prev, next) => prev - next);
 
-  uniquedNumbers.forEach(duplicate =>
+  uniqueNumbers.forEach(duplicate =>
     pairs += Math.floor(duplicatedNumbers.filter(number => number === duplicate).length / 2)
   );
 
