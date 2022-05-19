@@ -1,19 +1,36 @@
 // Solution:
 
+// function duplicates(array) {
+//   let pairs = 0;
+
+//   const duplicatedNumbers = array.filter((number, index, array) =>
+//     !(index === array.lastIndexOf(number)) || !(index === array.indexOf(number))
+//   );
+
+//   const uniqueNumbers = duplicatedNumbers.filter((number, index, array) =>
+//     index === array.lastIndexOf(number)
+//   ).sort((prev, next) => prev - next);
+
+//   uniqueNumbers.forEach(duplicate =>
+//     pairs += Math.floor(duplicatedNumbers.filter(number => number === duplicate).length / 2)
+//   );
+
+//   return pairs;
+// }
+
 function duplicates(array) {
   let pairs = 0;
 
-  const duplicatedNumbers = array.filter((number, index, array) =>
+  const numbers = array.filter((number, index, array) =>
     !(index === array.lastIndexOf(number)) || !(index === array.indexOf(number))
-  );
-
-  const uniqueNumbers = duplicatedNumbers.filter((number, index, array) =>
-    index === array.lastIndexOf(number)
   ).sort((prev, next) => prev - next);
 
-  uniqueNumbers.forEach(duplicate =>
-    pairs += Math.floor(duplicatedNumbers.filter(number => number === duplicate).length / 2)
-  );
+  for (let index = 0; index < numbers.length; index++){
+    if (numbers[index] === numbers[index + 1]) {
+      pairs++
+      index++
+    }
+  }
 
   return pairs;
 }
