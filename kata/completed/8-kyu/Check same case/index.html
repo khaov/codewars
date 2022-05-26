@@ -12,7 +12,21 @@
             <span>(8 kyu)</span> Check same case
         </h1>
         <section class="instructions">
+          <p>Write a function that will check if two given characters are the same case.</p>
 
+          <ul>
+            <li>If either of the characters is not a letter, return <code>-1</code></li>
+            <li>If both characters are the same case, return <code>1</code></li>
+            <li>If both characters are letters, but not the same case, return <code>0</code></li>
+          </ul>
+
+          <h2>Examples</h2>
+
+          <p><code>'a'</code> and <code>'g'</code> returns <code>1</code></p>
+          <p><code>'A'</code> and <code>'C'</code> returns <code>1</code></p>
+          <p><code>'b'</code> and <code>'G'</code> returns <code>0</code></p>
+          <p><code>'B'</code> and <code>'g'</code> returns <code>0</code></p>
+          <p><code>'0'</code> and <code>'?'</code> returns <code>-1</code></p>
         </section>
         <section class="notes">
           <p>
