@@ -12,6 +12,37 @@
             <span>(8 kyu)</span> Closest elevator
         </h1>
         <section class="instructions">
+          <p>Given 2 elevators (named "left" and "right") in a building with 3 floors (numbered <code>0</code> to <code>2</code>), write a function <code>elevator</code> accepting 3 arguments (in order):</p>
+
+          <ul>
+            <li>
+              <code>left</code> - The current floor of the left elevator
+            </li>
+            <li>
+              <code>right</code> - The current floor of the right elevator
+            </li>
+            <li>
+              <code>call</code> - The floor that called an elevator
+            </li>
+          </ul>
+
+          <p>It should return the name of the elevator closest to the called floor (<code>"left"</code>/<code>"right"</code>).</p>
+
+          <p>In the case where both elevators are equally distant from the called floor, choose the elevator to the right.</p>
+
+          <p>You can assume that the inputs will always be valid integers between 0-2.</p>
+
+          <p>Examples:</p>
+
+<pre>
+  <code>
+    elevator(0, 1, 0); // => "left"
+    elevator(0, 1, 1); // => "right"
+    elevator(0, 1, 2); // => "right"
+    elevator(0, 0, 0); // => "right"
+    elevator(0, 2, 1); // => "right"
+  </code>
+</pre>
 
         </section>
         <section class="notes">
