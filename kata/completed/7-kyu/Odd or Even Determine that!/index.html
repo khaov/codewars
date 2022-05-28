@@ -12,7 +12,34 @@
             <span>(7 kyu)</span> Odd or Even? Determine that!
         </h1>
         <section class="instructions">
+          <h2>Task</h2>
+          <p>Given a number <code>N</code>, determine if the sum of <code>N</code> <b><i>consecutive numbers</i></b> is odd or even.</p>
 
+          <ul>
+            <li>If the sum is definitely an odd number, return <code>Odd</code>.</li>
+            <li>If the sum is definitely an even number, return <code>Even</code>.</li>
+            <li>If the sum can be either odd or even ( depending on which first number you choose ), return <code>Either</code>.</li>
+          </ul>
+
+          <h2>Examples</h2>
+
+          <ul>
+            <li><code>Odd_or_Even(1)</code> should return <code>Either</code>, because the sum can be odd or even.</li>
+            <li><code>Odd_or_Even(6)</code> should return <code>Odd</code>, because <code>6</code> consecutive numbers contain <code>3</code> odd and <code>3</code> even numbers, so their sum is always odd.</li>
+            <li><code>Odd_or_Even(8)</code> should return <code>Even</code>, because <code>8</code> consecutive numbers contain <code>4</code> odd and <code>4</code> even numbers, so their sum is always even.</li>
+          </ul>
+
+          <h2>Note</h2>
+
+<pre>
+  <code>
+    const ODD = "Odd";
+    const EVEN = "Even";
+    const EITHER = "Either";
+  </code>
+</pre>
+
+          <p>is <code>Preloaded</code>.</p>
         </section>
         <section class="notes">
           <p>
