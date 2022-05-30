@@ -12,6 +12,22 @@
             <span>(6 kyu)</span> Can you keep a secret?
         </h1>
         <section class="instructions">
+          <p>There's no such thing as private properties on a coffeescript object! But, maybe there are?</p>
+          <p>Implement a function <code>createSecretHolder(secret)</code> which accepts any value as secret and returns an object with <b>ONLY</b> two methods</p>
+
+          <ul>
+            <li><code>getSecret()</code> which returns the secret</li>
+            <li><code>setSecret()</code> which sets the secret</li>
+          </ul>
+
+<pre>
+  <code>
+    obj = createSecretHolder(5)
+    obj.getSecret() <span class="note"># returns 5</span>
+    obj.setSecret(2)
+    obj.getSecret() <span class="note"># returns 2</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
