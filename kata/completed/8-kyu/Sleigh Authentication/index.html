@@ -12,6 +12,22 @@
             <span>(8 kyu)</span> Sleigh Authentication
         </h1>
         <section class="instructions">
+          <p>Christmas is coming and many people dreamed of having a ride with Santa's sleigh. But, of course, only Santa himself is allowed to use this wonderful transportation. And in order to make sure, that only he can board the sleigh, there's an authentication mechanism.</p>
+
+          <p>Your task is to implement the <code>authenticate()</code> method of the sleigh, which takes the name of the person, who wants to board the sleigh and a secret password. If, and only if, the name equals "Santa Claus" and the password is "Ho Ho Ho!" <i>(yes, even Santa has a secret password with uppercase and lowercase letters and special characters :D)</i>, the return value must be <code>true</code>. Otherwise it should return <code>false</code>.</p>
+
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    var sleigh = new Sleigh();
+    sleigh.authenticate("Santa Claus", "Ho Ho Ho!"); <span class="note">// must return TRUE</span>
+
+    sleigh.authenticate("Santa", "Ho Ho Ho!"); <span class="note">// must return FALSE</span>
+    sleigh.authenticate("Santa Claus", "Ho Ho!"); <span class="note">// must return FALSE</span>
+    sleigh.authenticate("jhoffner", "CodeWars"); <span class="note">// Nope, even Jake is not allowed to use the sleigh ;)</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
