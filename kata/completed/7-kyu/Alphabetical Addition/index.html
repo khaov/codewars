@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Alphabetical Addition</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Alphabetical Addition
+        </h1>
+        <section class="instructions">
+          <p>Your task is to add up letters to one letter.</p>
+          <p>The function will be given a variable amount of arguments, each one being a letter to add.</p>
+
+          <h2> Notes:</h2>
+          <ul>
+            <li>Letters will always be lowercase.</li>
+            <li>Letters can overflow (see second to last example of the description)</li>
+            <li>If no letters are given, the function should return <code>'z'</code></li>
+          </ul>
+
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    addLetters('a', 'b', 'c') = 'f'
+    addLetters('a', 'b') = 'c'
+    addLetters('z') = 'z'
+    addLetters('z', 'a') = 'a'
+    addLetters('y', 'c', 'b') = 'd' // notice the letters overflowing
+    addLetters() = 'z'
+  </code>
+</pre>
+
+
+
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/5d50e3914861a500121e1958/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
