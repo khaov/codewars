@@ -1,7 +1,25 @@
 // Solution:
 
 function solution(n){
-  return Math.round(n*2)/2;
+
+  // return Math.round(n*2)/2;
+
+  const integer =  Math.trunc(n);
+  const remainder = n % 1;
+
+  switch (true) {
+    case remainder < 0.25 :
+      return integer;
+      break;
+    case (remainder > 0.25 && remainder < 0.5) || (remainder > 0.5 && remainder < 0.75) :
+      return integer + 0.5;
+      break;
+    case remainder <= 0.25 || remainder >= 0.75 :
+      return integer + 1;
+      break;
+    default:
+      return n;
+  }
 }
 
 // Sample Tests:
