@@ -12,6 +12,41 @@
             <span>(6 kyu)</span> Matrix Addition
         </h1>
         <section class="instructions">
+          <p>Write a function that accepts two square matrices (<code>N x N</code> two dimensional arrays), and return the sum of the two. Both matrices being passed into the function will be of size <code>N x N</code> (square), containing only integers.</p>
+
+          <p>How to sum two matrices:</p>
+
+          <p>Take each cell <code>[n][m]</code> from the first matrix, and add it with the same <code>[n][m]</code> cell from the second matrix. This will be cell <code>[n][m]</code> of the solution matrix.</p>
+
+          <h2>Visualization:</h2>
+
+<pre>
+  <code>
+    |1 2 3|     |2 2 1|     |1+2 2+2 3+1|     |3 4 4|
+    |3 2 1|  +  |3 2 3|  =  |3+3 2+2 1+3|  =  |6 4 4|
+    |1 1 1|     |1 1 3|     |1+1 1+1 1+3|     |2 2 4|
+  </code>
+</pre>
+
+          <h2>Example</h2>
+
+<pre>
+  <code>
+    matrixAddition(
+      [ [1, 2, 3],
+        [3, 2, 1],
+        [1, 1, 1] ],
+    <span class="note">//      +</span>
+      [ [2, 2, 1],
+        [3, 2, 3],
+        [1, 1, 3] ] )
+
+    <span class="note">// returns:</span>
+      [ [3, 4, 4],
+        [6, 4, 4],
+        [2, 2, 4] ]
+  </code>
+</pre>
 
         </section>
         <section class="notes">
