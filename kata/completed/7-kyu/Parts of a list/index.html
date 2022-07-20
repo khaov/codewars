@@ -12,7 +12,43 @@
             <span>(7 kyu)</span> Parts of a list
         </h1>
         <section class="instructions">
+          <p>Write a function <code>partlist</code> that gives all the ways to divide a list (an array) of at least two elements into two non-empty parts.</p>
 
+<ul>
+  <li>
+    Each two non empty parts will be in a pair (or an array for languages without tuples or a <code>structin</code> C - C: see Examples test Cases - )
+  </li>
+  <li>
+    Each part will be in a string
+  </li>
+  <li>
+    Elements of a pair must be in the same order as in the original array.
+  </li>
+</ul>
+
+          <h2>Examples of returns in different languages:</h2>
+
+<pre>
+  <code>
+    a = ["az", "toto", "picaro", "zone", "kiwi"] -->
+    [["az", "toto picaro zone kiwi"], ["az toto", "picaro zone kiwi"], ["az toto picaro", "zone kiwi"], ["az toto picaro zone", "kiwi"]]
+    or
+     a = {"az", "toto", "picaro", "zone", "kiwi"} -->
+    {{"az", "toto picaro zone kiwi"}, {"az toto", "picaro zone kiwi"}, {"az toto picaro", "zone kiwi"}, {"az toto picaro zone", "kiwi"}}
+    or
+    a = ["az", "toto", "picaro", "zone", "kiwi"] -->
+    [("az", "toto picaro zone kiwi"), ("az toto", "picaro zone kiwi"), ("az toto picaro", "zone kiwi"), ("az toto picaro zone", "kiwi")]
+    or
+    a = [|"az", "toto", "picaro", "zone", "kiwi"|] -->
+    [("az", "toto picaro zone kiwi"), ("az toto", "picaro zone kiwi"), ("az toto picaro", "zone kiwi"), ("az toto picaro zone", "kiwi")]
+    or
+    a = ["az", "toto", "picaro", "zone", "kiwi"] -->
+    "(az, toto picaro zone kiwi)(az toto, picaro zone kiwi)(az toto picaro, zone kiwi)(az toto picaro zone, kiwi)"
+  </code>
+</pre>
+
+          <h2>Note</h2>
+          <p>You can see other examples for each language in "Your test cases"</p>
         </section>
         <section class="notes">
           <p>
