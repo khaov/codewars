@@ -12,7 +12,23 @@
             <span>(6 kyu)</span> Rank Vector
         </h1>
         <section class="instructions">
+          <p>Given an array (or list) of scores, return the array of <i>ranks</i> for each value in the array. The largest value has rank 1, the second largest value has rank 2, and so on. Ties should be handled by assigning the same rank to all tied values. For example:</p>
 
+<pre>
+  <code>
+    ranks([9,3,6,10]) = [2,4,3,1]
+  </code>
+</pre>
+
+          <p>and</p>
+
+<pre>
+  <code>
+    ranks([3,3,3,3,3,5,1]) = [2,2,2,2,2,1,7]
+  </code>
+</pre>
+
+          <p>because there is one 1st place value, a five-way tie for 2nd place, and one in 7th place.</p>
         </section>
         <section class="notes">
           <p>
