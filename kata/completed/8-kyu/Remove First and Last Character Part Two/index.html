@@ -12,7 +12,24 @@
             <span>(8 kyu)</span> Remove First and Last Character Part Two
         </h1>
         <section class="instructions">
+          <p>This is a spin off of <a href="https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0" target="_blank">my first kata</a>.</p>
+          <p>You are given a string containing a sequence of character sequences separated by commas.</p>
+          <p>Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.</p>
+          <p>If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value <code>NULL</code> in the examples below).</p>
 
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    "1,2,3"      =>  "2"
+    "1,2,3,4"    =>  "2 3"
+    "1,2,3,4,5"  =>  "2 3 4"
+
+    ""     =>  NULL
+    "1"    =>  NULL
+    "1,2"  =>  NULL
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
