@@ -12,6 +12,21 @@
             <span>(8 kyu)</span> pick a set of first elements
         </h1>
         <section class="instructions">
+          <p>Write a function to get the first elements of asequence. Passing a parameter <code>n</code> (default = <code>1</code>) will return the first <code>n</code> elements of the sequence.</p>
+
+          <p>If <code>n</code> == <code>0</code> return an empty sequence <code>[]</code></p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    first(arr)    <span class="note">//=> ['a'];</span>
+    first(arr, 2) <span class="note">//=> ['a', 'b']</span>
+    first(arr, 3) <span class="note">//=> ['a', 'b', 'c'];</span>
+    first(arr, 0) <span class="note">//=> [];</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
