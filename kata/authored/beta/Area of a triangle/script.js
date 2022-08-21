@@ -11,9 +11,9 @@
 // Solution:
 
 function area(a, h) {
-
+  return a * h / 2;
 }
 
 // Sample Tests:
 
-area(5, 5) // "Normal"
+area(5, 5) // 12.5
