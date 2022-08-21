@@ -12,7 +12,24 @@
             <span>(7 kyu)</span> Find the smallest power higher than a given a value
         </h1>
         <section class="instructions">
+          <p>We have the number <code>12385</code>. We want to know the value of the closest cube but higher than 12385. The answer will be <code>13824</code>.</p>
 
+          <p>Now, another case. We have the number <code>1245678</code>. We want to know the 5th power, closest and higher than that number. The value will be <code>1419857</code>.</p>
+
+          <p>We need a function <code>find_next_power</code> ( <code>findNextPower</code> in JavaScript, CoffeeScript and Haskell), that receives two arguments, a value <code>val</code>, and the exponent of the power, <code>pow_</code>, and outputs the value that we want to find.</p>
+
+          <p>Let'see some cases:</p>
+<pre>
+  <code>
+    findNextPower(12385, 3) == 13824
+
+    findNextPower(1245678, 5) == 1419857
+  </code>
+</pre>
+
+          <p>The value, <code>val</code> will be always a positive integer.</p>
+          <p>The power, <code>pow_</code>, always higher than <code>1</code>.</p>
+          <p>Happy coding!!</p>
         </section>
         <section class="notes">
           <p>
