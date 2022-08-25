@@ -12,6 +12,32 @@
             <span>(8 kyu)</span> Take the Derivative
         </h1>
         <section class="instructions">
+          <p>This function takes two numbers as parameters, the first number being the coefficient, and the second number being the exponent.</p>
+          <p>Your function should multiply the two numbers, and then subtract 1 from the exponent. Then, it has to print out an expression (like 28x^7). <code>"^1"</code> should not be truncated when exponent = 2.</p>
+
+          <p>For example:</p>
+
+<pre>
+  <code>
+    derive(7, 8)
+  </code>
+</pre>
+
+          <p>In this case, the function should multiply 7 and 8, and then subtract 1 from 8. It should output <code>"56x^7"</code>, the first number 56 being the product of the two numbers, and the second number being the exponent minus 1.</p>
+
+          <pre>
+            <code>
+              derive(7, 8) --> this should output "56x^7"
+              derive(5, 9) --> this should output "45x^8"
+            </code>
+          </pre>
+
+          <h2>Notes:</h2>
+
+          <ul>
+            <li>The output of this function should be a string</li>
+            <li>The exponent will never be 1, and neither number will ever be 0</li>
+          </ul>
 
         </section>
         <section class="notes">
