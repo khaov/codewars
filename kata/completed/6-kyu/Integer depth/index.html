@@ -12,7 +12,28 @@
             <span>(6 kyu)</span> Integer depth
         </h1>
         <section class="instructions">
+          <p>The <code>depth</code> of an integer <code>n</code> is defined to be how many multiples of <code>n</code> it is necessary to compute before all <code>10</code> digits have appeared at least once in some multiple.</p>
 
+          <p>example:</p>
+
+<pre>
+  <code>
+    let see n=42
+          
+    Multiple         value         digits     comment
+    42*1              42            2,4 
+    42*2              84             8         4 existed
+    42*3              126           1,6        2 existed
+    42*4              168            -         all existed
+    42*5              210            0         2,1 existed
+    42*6              252            5         2 existed
+    42*7              294            9         2,4 existed
+    42*8              336            3         6 existed 
+    42*9              378            7         3,8 existed
+  </code>
+</pre>
+
+          <p>Looking at the above table under <code>digits</code> column you can find all the digits from <code>0</code> to <code>9</code>, Hence it required <code>9</code> multiples of <code>42</code> to get all the digits. So the depth of <code>42</code> is <code>9</code>. Write a function named <code>computeDepth</code> which computes the depth of its integer argument.Only positive numbers greater than zero will be passed as an input.</p>
         </section>
         <section class="notes">
           <p>
