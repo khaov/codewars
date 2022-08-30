@@ -12,7 +12,35 @@
             <span>(7 kyu)</span> Counting Valleys
         </h1>
         <section class="instructions">
+          <p>You need count how many valleys you will pass.</p>
 
+          <p>Start is always from zero level.</p>
+          
+          <p>Every time you go down below 0 level counts as an entry of a valley, and as you go up to 0 level from valley counts as an exit of a valley.</p>
+          
+          <p>One passed valley is equal one entry and one exit of a valley.</p>
+
+<pre>
+  <code>
+    s='FUFFDDFDUDFUFUF'
+    U=UP
+    F=FORWARD
+    D=DOWN
+  </code>
+</pre>
+
+          <p>To represent string above</p>
+
+<pre>
+  <code>
+    (level 1)  __
+    (level 0)_/  \         _(exit we are again on level 0)
+    (entry-1)     \_     _/
+    (level-2)       \/\_/
+  </code>
+</pre>
+
+          <p>So here we passed one valley</p>
         </section>
         <section class="notes">
           <p>
