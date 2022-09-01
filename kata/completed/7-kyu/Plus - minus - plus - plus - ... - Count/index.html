@@ -12,6 +12,30 @@
             <span>(7 kyu)</span> Plus - minus - plus - plus - ... - Count
         </h1>
         <section class="instructions">
+          <p>Count how often sign changes in array.</p>
+
+          <h2>result</h2>
+          <p>number from <code>0</code> to ... . Empty array returns <code>0</code></p>
+          
+          <h2>example</h2>
+
+<pre>
+  <code>
+    const arr = [1, -3, -4, 0, 5];
+    <span class="note">
+    /*
+    | elem | count |
+    |------|-------|
+    |  1   |  0    |
+    | -3   |  1    |
+    | -4   |  1    |
+    |  0   |  2    |
+    |  5   |  2    |
+    */
+    </span>
+    catchSignChange(arr) == 2;
+  </code>
+</pre>
 
         </section>
         <section class="notes">
