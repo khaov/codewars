@@ -12,7 +12,41 @@
             <span>(6 kyu)</span> Compare Versions
         </h1>
         <section class="instructions">
+          <p>Karan's company makes software that provides different features based on the version of operating system of the user.</p>
+          <p>For finding which version is more recent, Karan uses the following method:</p>
 
+<pre>
+  <code>
+    function compareVersions (version1, version2) {
+      return parseFloat(version1) >= parseFloat(version2);
+    }
+  </code>
+</pre>
+
+          <p>While this function worked for OS versions 10.6, 10.7, 10.8 and 10.9, the Operating system company just released OS version 10.10.</p>
+          <p>Karan's function fails for the new version:</p>
+
+<pre>
+  <code>
+    compareVersions ("10.9", "10.10");       <span class="note">// returns true, while it should return false</span>
+  </code>
+</pre>          
+
+          <p>Karan now wants to spend some time to right a more robust version comparison function that works for any future version/sub-version updates.</p>
+          <p>Help Karan write this function. Here are a few sample cases:</p>
+
+<pre>
+  <code>
+    compareVersions("11", "10");                    <span class="note">// returns true</span>
+    compareVersions("11", "11");                    <span class="note">// returns true</span>
+    compareVersions("10.4.6", "10.4");              <span class="note">// returns true</span>
+    compareVersions("10.4", "11");                  <span class="note">// returns false</span>
+    compareVersions("10.4", "10.10");               <span class="note">// returns false</span>
+    compareVersions("10.4.9", "10.5");              <span class="note">// returns false</span>
+  </code>
+</pre>
+
+          <p>It can be assumed that version strings are non empty and only contain numeric literals and the character <code>'.'</code>.</p>
         </section>
         <section class="notes">
           <p>
