@@ -12,6 +12,40 @@
             <span>(6 kyu)</span> IndexOf Array in Array
         </h1>
         <section class="instructions">
+          <p>JavaScript's indexOf does not work with arrays as input. This is because [1,2] === [1,2] will return false in JavaScript. Many other languages have similar quirks.</p>
+          <p>However, sometimes it is useful to search for an Array. Write a function that looks for an array within a two-dimensional array and returns the index of the first matching element. If there is no match, your function should return -1.</p>
+          <p>See some examples:</p>
+
+<pre>
+  <code>
+    var arrayToSearch = [[1,2],[3,4],[5,6]];
+    var query = [1,2]; <span class="note">// => 0</span>
+    query = [5,6]; <span class="note">// => 2</span>
+    query = [9,2]; <span class="note">// => -1</span>
+  </code>
+</pre>
+
+          <p>You will be required to validate the inputs on the following criteria:</p>
+
+          <ul>
+            <li>each element of the array to be searched should be an array;</li>
+            <li>each sub-array in the two-dimensional array should be of length two; and</li>
+            <li>query should be an array of length two.</li>
+          </ul>
+
+          <p>If the inputs are not valid you should throw an Error.</p>
+          
+          <p>See some examples:</p>
+<pre>
+  <code>
+    var arrayToSearch = [[1,2],[3,4],[5,6],[7,8,9]]; <span class="note">// => throw Error</span>
+    arrayToSearch = [1,2,3,4,5,6]; <span class="note">// => throw Error</span>
+    arrayToSearch = [[1,2],[3,4],[5,6]]; <span class="note">// => valid input</span>
+    var query = [1,2]; <span class="note">// => valid input</span>
+    query = 5; <span class="note">// => throw Error</span>
+    query = [9,2,1]; <span class="note">// => throw Error</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
