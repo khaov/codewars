@@ -12,6 +12,30 @@
             <span>(7 kyu)</span> Binary Pyramid 101
         </h1>
         <section class="instructions">
+          <p>Given two numbers <code>m</code> and <code>n</code>, such that <code>0 ≤ m ≤ n</code>:</p>
+
+          <ul>
+            <li>convert all numbers from <code>m</code> to <code>n</code> (inclusive) to binary</li>
+            <li>sum them as if they were in base 10</li>
+            <li>convert the result to binary</li>
+            <li>return as a string</li>
+          </ul>
+
+          <h2>Example</h2>
+
+<pre>
+  <code>
+    1, 4  -->  1111010
+
+    because:
+        1  <span class="note">// 1 in binary is 1</span>
+    +  10  <span class="note">// 2 in binary is 10</span>
+    +  11  <span class="note">// 3 in binary is 11</span>
+    + 100  <span class="note">// 4 in binary is 100</span>
+    -----
+      122  // 122 in binary is 1111010
+  </code>
+</pre>
 
         </section>
         <section class="notes">
