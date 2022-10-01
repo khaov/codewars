@@ -95,6 +95,13 @@ p {
   line-height: 1.75em;
 }
 
+/* Images */
+
+img {
+  display: block;
+  margin: 16px 0;
+}
+
 /* Tags */
 
 .tags {
