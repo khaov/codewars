@@ -23,13 +23,15 @@ function twinPrime(n) {
     return result;
   }
 
-  // Prime number function
+  // Prime numbers
 
   for (let i = 2; i <= n; i++) {
     if (isPrime(i) === true) {
       primes.push(i);
     }
   }
+
+  // Prime numbers pairs
 
   primes.forEach(function(number, index, array) {
     if (array[index + 1] - number === 2) {
@@ -38,6 +40,8 @@ function twinPrime(n) {
   });
 
   twinPrimes = twinPrimes.length / 2;
+
+  // Twin primes wrap
 
   if (n > 0 && isPrime(n - 1) === true && isPrime(n + 1) === true) {
     twinPrimes++
