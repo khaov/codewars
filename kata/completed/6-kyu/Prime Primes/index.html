@@ -12,6 +12,27 @@
             <span>(6 kyu)</span> Prime Primes
         </h1>
         <section class="instructions">
+          <p>Define a "prime prime" number to be a rational number written as one prime number over another prime number: <code>primeA / primeB</code> (e.g. <code>7/31</code>)</p>
+
+          <p>Given a whole number <code>N</code> / <code>n</code>, generate the number of "prime prime" rational numbers less than 1, using only prime numbers between <code>0</code> and <code>N</code> / <code>n</code>(non inclusive).</p>
+
+          <p>Return the count of these "prime primes", and the integer part of their sum.</p>
+
+          <h2>Example</h2>
+
+<pre>
+  <code>
+    N = 6
+
+    <span class="note">// The "prime primes" less than 1 are:</span>
+
+    2/3, 2/5, 3/5               <span class="note">// count: 3</span>
+
+    2/3 + 2/5 + 3/5 = 1.6667    <span class="note">// integer part: 1</span>
+
+    Thus, the function should return [3, 1].
+  </code>
+</pre>
 
         </section>
         <section class="notes">
