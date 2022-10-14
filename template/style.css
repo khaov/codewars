@@ -89,6 +89,42 @@ li {
   text-align: left;
 }
 
+/* Tables */
+
+table {
+  width: 100%;
+  margin: 16px 0;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.75em;
+}
+
+th, td {
+  margin: 0;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, .125);
+}
+
+th {
+  padding-top: 0;
+  font-weight: 700;
+}
+
+th:first-of-type,
+td:first-of-type {
+  padding-left: 0;
+}
+
+th:last-of-type,
+td:last-of-type {
+  padding-right: 0;
+}
+
+tr:last-of-type td {
+  padding-bottom: 0;
+  border: 0;
+}
+
 blockquote,
 li,
 p {
@@ -182,5 +218,5 @@ hr {
   height: 1px;
   margin: 1em 0;
   border: 0;
-  background-color: rgba(255, 255, 255, .125);;
+  background-color: rgba(255, 255, 255, .125);
 }
