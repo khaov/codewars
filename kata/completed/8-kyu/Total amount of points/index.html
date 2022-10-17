@@ -12,7 +12,29 @@
             <span>(8 kyu)</span> Total amount of points
         </h1>
         <section class="instructions">
+          <p>Our football team has finished the championship.</p>
 
+          <p>Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format <code>"x:y"</code>, where <code>x</code> is our team's score and <code>y</code> is our opponents score.</p>
+
+          <p>For example: <code>["3:1", "2:2", "0:1", ...]</code></p>
+
+          <p>Points are awarded for each match as follows:</p>
+
+          <ul>
+            <li>if x > y: 3 points (win)</li>
+            <li>if x < y: 0 points (loss)</li>
+            <li>if x = y: 1 point (tie)</li>
+          </ul>
+
+          <p>We need to write a function that takes this collection and returns the number of points our team (<code>x</code>) got in the championship by the rules given above.</p>
+
+          <p>Notes:</p>
+
+          <ul>
+            <li>our team always plays 10 matches in the championship</li>
+            <li>0 <= x <= 4</li>
+            <li>0 <= y <= 4</li>
+          </ul>
         </section>
         <section class="notes">
           <p>
