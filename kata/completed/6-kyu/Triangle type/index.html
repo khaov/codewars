@@ -12,7 +12,50 @@
             <span>(6 kyu)</span> Triangle type
         </h1>
         <section class="instructions">
+          <p>In this kata, you should calculate type of triangle with three given sides <code>a</code>, <code>b</code> and <code>c</code> (given in any order).</p>
+          <p>If all angles are less than <code>90°</code>, this triangle is <code>acute</code> and function should return <code>1</code>.</p>
+          <p>If one angle is strictly <code>90°</code>, this triangle is <code>right</code> and function should return <code>2</code>.</p>
+          <p>If one angle more than <code>90°</code>, this triangle is <code>obtuse</code> and function should return <code>3</code>.</p>
+          <p>If three sides cannot form triangle, or one angle is <code>180°</code> (which turns triangle into segment) - function should return <code>0</code>.</p>
+          <p>Input parameters are <code>sides</code> of given triangle. All input values are non-negative floating point or integer numbers (or both).</p>
 
+          <table
+            style="
+              padding: 0 16px;
+              background-color: white;
+              color: black;
+              text-align: center;"
+          >
+            <tr>
+              <td>
+                <img src="../../../../images/completed/6-kyu/Triangle type/triangle-acute.png" alt="Acute triangle">
+                <p>Acute</p>
+              </td>
+              <td>
+                <img src="../../../../images/completed/6-kyu/Triangle type/triangle-right.png" alt="Right triangle">
+                <p>Right</p>
+              </td>
+              <td>
+                <img src="../../../../images/completed/6-kyu/Triangle type/triangle-obtuse.png" alt="Obtuse triangle">
+                <p>Obtuse</p>
+              </td>
+            </tr>
+          </table>
+
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    triangleType(2, 4, 6); <span class="note">// return 0 (Not triangle)</span>
+    triangleType(8, 5, 7); <span class="note">// return 1 (Acute, angles are approx. 82°, 38° and 60°)</span>
+    triangleType(3, 4, 5); <span class="note">// return 2 (Right, angles are approx. 37°, 53° and exactly 90°)</span>
+    triangleType(7, 12, 8); <span class="note">// return 3 (Obtuse, angles are approx. 34°, 106° and 40°)</span>
+  </code>
+</pre>
+
+          <p>If you stuck, this can help you: <a href="http://en.wikipedia.org/wiki/Law_of_cosines" target="_blank">Law of cosines</a>. But you can solve this kata even without angle calculation.</p>
+
+          <p>There is very small chance of random test to fail due to round-off error, in such case resubmit your solution.</p>
         </section>
         <section class="notes">
           <p>
