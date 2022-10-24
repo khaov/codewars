@@ -12,7 +12,24 @@
             <span>(6 kyu)</span> Format words into a sentence
         </h1>
         <section class="instructions">
+          <p>Complete the method so that it formats the words into a single comma separated value. The last word should be separated by the word 'and' instead of a comma. The method takes in an array of strings and returns a single formatted string.</p>
 
+          <p>Note:</p>
+
+          <ul>
+            <li><b>Empty string</b> values should be ignored.</li>
+            <li><b>Empty arrays</b> or <b>null/nil/None</b> values being passed into the method should result in an empty string being returned.</li>
+          </ul>
+
+          <p>Example: <b>(Input --> output)</b></p>
+
+<pre>
+  <code>
+    ['ninja', 'samurai', 'ronin'] --> "ninja, samurai and ronin"
+    ['ninja', '', 'ronin'] --> "ninja and ronin"
+    [] -->""
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
