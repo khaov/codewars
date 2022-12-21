@@ -13,6 +13,33 @@
         </h1>
         <section class="instructions">
 
+          <img src="../../../../images/completed/8-kyu/Localize The Barycenter of a Triangle/01.png" alt="Mirror frame">
+
+          <p>The medians of a triangle are the segments that unit the vertices with the midpoint of their opposite sides. The three medians of a triangle intersect at the same point, called the barycenter or the centroid. Given a triangle, defined by the cartesian coordinates of its vertices we need to localize its barycenter or centroid.</p>
+
+          <p>The function <code>bar_triang() or barTriang or bar-triang</code>, receives the coordinates of the three vertices <code>A, B and C</code>  as three different arguments and outputs the coordinates of the barycenter <code>O</code> in an array <code>[xO, yO]</code></p>
+
+          <p>This is how our asked function should work: the result of the coordinates should be expressed up to four decimals, (rounded result).</p>
+
+          <p>You know that the coordinates of the barycenter are given by the following formulas.</p>
+
+          <img src="../../../../images/completed/8-kyu/Localize The Barycenter of a Triangle/02.jpg" alt="Mirror frame">
+
+          <p>For additional information about this important point of a triangle see at: <a href="https://en.wikipedia.org/wiki/Centroid" target="_blank">Centroid</a></p>
+
+          <p>Let's see some cases:</p>
+
+<pre>
+  <code>
+    barTriang([4, 6], [12, 4], [10, 10]) ------> [8.6667, 6.6667]
+
+    barTriang([4, 2], [12, 2], [6, 10]) ------> [7.3333, 4.6667]
+  </code>
+</pre>
+
+          <p>The given points form a real or a degenerate triangle but in each case the above formulas can be used.</p>
+
+          <p>Enjoy it and happy coding!!</p>
         </section>
         <section class="notes">
           <p>
