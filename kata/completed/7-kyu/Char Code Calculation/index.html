@@ -12,6 +12,35 @@
             <span>(7 kyu)</span> Char Code Calculation
         </h1>
         <section class="instructions">
+          <p>Given a string, turn each character into its ASCII character code and join them together to create a number - let's call this number <code>total1</code>:</p>
+
+<pre>
+  <code>
+    'ABC' --> 'A' = 65, 'B' = 66, 'C' = 67 --> 656667
+  </code>
+</pre>
+
+          <p>Then replace any incidence of the number <code>7</code> with the number <code>1</code>, and call this number 'total2':</p>
+
+<pre>
+  <code>
+    total1 = 656667
+                  ^
+    total2 = 656661
+                  ^
+  </code>
+</pre>
+
+          <p>Then return the difference between the sum of the digits in <code>total1</code> and <code>total2</code>:</p>
+
+<pre>
+  <code>
+    (6 + 5 + 6 + 6 + 6 + 7)
+    - (6 + 5 + 6 + 6 + 6 + 1)
+    -------------------------
+                           6
+  </code>
+</pre>
 
         </section>
         <section class="notes">
