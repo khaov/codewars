@@ -12,6 +12,47 @@
             <span>(7 kyu)</span> Survive the attack
         </h1>
         <section class="instructions">
+          <p>Given two Arrays in which values are the power of each soldier, return true if you survive the attack or false if you perish.</p>
+
+          <h2>CONDITIONS</h2>
+
+          <ul>
+            <li>
+              <p>Each soldier attacks the opposing soldier in the same index of the array. The survivor is the number with the highest value.</p>
+              <ul>
+                <li>If the value is the same they both perish</li>
+                <li>If one of the values is empty(different array lengths) the non-empty value soldier survives.</li>
+              </ul>
+            </li>
+            <li>
+              <p>To survive the defending side must have more survivors than the attacking side.</p>
+            </li>
+            <li>
+              <p>In case there are the same number of survivors in both sides, the winner is the team with the highest initial attack power. If the total attack power of both sides is the same return true.</p>
+              <ul>
+                <li>The initial attack power is the sum of all the values in each array.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>EXAMPLES</h2>
+
+<pre>
+  <code>
+    attackers=[ 1, 3, 5, 7 ]   defenders=[ 2, 4, 6, 8 ]
+    //0 survivors                4 survivors
+    //return true
+
+
+    attackers=[ 1, 3, 5, 7 ]   defenders=[ 2, 4 ]
+    //2 survivors  (16 damage)   2 survivors (6 damage)
+    //return false
+
+    attackers=[ 1, 3, 5, 7 ]   defenders=[ 2, 4, 0, 8 ]
+    //1 survivors                3 survivors
+    //return true
+  </code>
+</pre>
 
         </section>
         <section class="notes">
