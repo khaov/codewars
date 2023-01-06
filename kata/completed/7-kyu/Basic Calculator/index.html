@@ -12,7 +12,20 @@
             <span>(7 kyu)</span> Basic Calculator
         </h1>
         <section class="instructions">
+          <p>Write a function called calculate that takes 3 values. The first and third values are numbers. The second value is a character. If the character is "+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of the specified characters, the function should return null (throw an <code>ArgumentException</code> in C#).</p>
 
+<pre>
+  <code>
+    calculate(2,"+", 4); <span class="note">//Should return 6</span>
+    calculate(6,"-", 1.5); <span class="note">//Should return 4.5</span>
+    calculate(-4,"*", 8); <span class="note">//Should return -32</span>
+    calculate(49,"/", -7); <span class="note">//Should return -7</span>
+    calculate(8,"m", 2); <span class="note">//Should return null</span>
+    calculate(4,"/",0) <span class="note">//should return null</span>
+  </code>
+</pre>
+
+          <p>Keep in mind, you cannot divide by zero. If an attempt to divide by zero is made, return null (throw an <code>ArgumentException</code> in C#)/(None in Python).</p>
         </section>
         <section class="notes">
           <p>
