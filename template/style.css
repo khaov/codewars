@@ -2,6 +2,8 @@
 
 @import url(../vendor/fonts.css);
 
+/* Default */
+
 body {
   display: flex;
   flex-direction: column;
@@ -219,6 +221,85 @@ hr {
   margin: 1em 0;
   border: 0;
   background-color: rgba(255, 255, 255, .125);
+}
+
+/* Kyu */
+
+.kyu__badge {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 26px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.kyu__badge::before,
+.kyu__badge::after {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  content: " ";
+  width: 0;
+  height: 0;
+}
+
+.kyu__badge::before {
+  left: -8px;
+  border-right: 8px solid white;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.kyu__badge::after {
+  right: -8px;
+  border-left: 8px solid white;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.kyu__rank {
+  position: relative;
+  top: 2px;
+  z-index: 1;
+  width: 32px;
+  height: 22px;
+  margin-left: 1px;
+  background-color: #303133;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.kyu__rank::before,
+.kyu__rank::after {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  content: " ";
+  width: 0;
+  height: 0;
+}
+
+.kyu__rank::before {
+  left: -6px;
+  border-right: 6px solid #303133;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+.kyu__rank::after {
+  right: -6px;
+  border-left: 6px solid #303133;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+.kyu__rank span {
+  position: relative;
+  z-index: 2;
 }
 
 /* Dashboard */
