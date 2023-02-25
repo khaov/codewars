@@ -1,18 +1,9 @@
 // Solution:
 
 function fuelPrice(litres, pricePerLitre) {
-
-  let discountPerLiter = 0;
-
-  if (litres >= 2) {
-    const discountIncrease = Math.floor(litres / 2);
-  }
-
-
-
-  const finalPrice = pricePerLitre * 100 -  litres * discountPerLiter;
-
-  return (litres * finalPrice) / 100;
+  const discountPerLiter = Math.min(Math.floor(litres / 2) * 0.05, 0.25);
+  const totalPrice = litres * (pricePerLitre - discountPerLiter);
+  return Math.round(totalPrice * 100) / 100;
 }
 
 // Sample Tests:
