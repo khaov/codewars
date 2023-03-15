@@ -12,7 +12,38 @@
             <span>(7 kyu)</span> Rotate for a Max
         </h1>
         <section class="instructions">
+          <p>Let us begin with an example:</p>
 
+          <p>Take a number: <code>56789</code>. Rotate left, you get <code>67895</code>.</p>
+          
+          <p>Keep the first digit in place and rotate left the other digits: <code>68957</code>.</p>
+          
+          <p>Keep the first two digits in place and rotate the other ones: <code>68579</code>.</p>
+          
+          <p>Keep the first three digits and rotate left the rest: <code>68597</code>. Now it is over since keeping the first four it remains only one digit which rotated is itself.</p>
+          
+          <p>You have the following sequence of numbers:</p>
+
+          <p>
+            <code>56789 -> 67895 -> 68957 -> 68579 -> 68597</code>
+          </p>
+          
+          <p>and you must return the greatest: <code>68957</code>.</p>
+          
+          <h2>Task</h2>
+
+          <p>Write <code>function max_rot(n)</code> which given a positive integer <code>n</code> returns the maximum number you got doing rotations similar to the above example.</p>
+          
+          <p>So <code>max_rot</code> (or <code>maxRot</code> or ... depending on the language) is such as:</p>
+          
+          <ul>
+            <li>
+              <code>max_rot(56789) should return 68957</code>
+            </li>
+            <li>
+              <code>max_rot(38458215) should return 85821534</code>
+            </li>
+          </ul>
         </section>
         <section class="notes">
           <p>
