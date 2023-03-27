@@ -12,6 +12,24 @@
             <span>(6 kyu)</span> Arrays Similar
         </h1>
         <section class="instructions">
+          <p>Write a function that determines whether the passed in sequences are similar. Similar means they contain the same elements, and the same number of occurrences of elements.</p>
+
+<pre>
+  <code>
+    var arr1 = [1, 2, 2, 3, 4],
+        arr2 = [2, 1, 2, 4, 3],
+        arr3 = [1, 2, 3, 4],
+        arr4 = [1, 2, 3, "4"]
+  </code>
+</pre>
+
+<pre>
+  <code>
+    arraysSimilar(arr1, arr2); <span class="note">// Should equal true</span>
+    arraysSimilar(arr2, arr3); <span class="note">// Should equal false</span>
+    arraysSimilar(arr3, arr4); <span class="note">// Should equal false</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
