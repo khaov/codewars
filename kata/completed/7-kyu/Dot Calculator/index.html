@@ -12,7 +12,38 @@
             <span>(7 kyu)</span> Dot Calculator
         </h1>
         <section class="instructions">
+          <h2>Dot Calculator</h2>
 
+          <p>You have to write a calculator that receives strings for input. The dots will represent the number in the equation. There will be dots on one side, an operator, and dots again after the operator. The dots and the operator will be separated by one space.</p>
+
+          <p>Here are the following valid operators :</p>
+
+          <ul>
+            <li><code>+</code> Addition</li>
+            <li><code>-</code> Subtraction</li>
+            <li><code>*</code> Multiplication</li>
+            <li><code>//</code> Integer Division</li>
+          </ul>
+
+          <h2>Your Work (Task)</h2>
+
+          <p>You'll have to return a string that contains dots, as many the equation returns. If the result is 0, return the empty string. When it comes to subtraction, the first number will always be greater than or equal to the second number.</p>
+
+          <h2>Examples (Input => Output)</h2>
+
+<pre>
+  <code>
+    * "..... + ..............." => "...................."
+    * "..... - ..."             => ".."
+    * "..... - ."               => "...."
+    * "..... * ..."             => "..............."
+    * "..... * .."              => ".........."
+    * "..... // .."             => ".."
+    * "..... // ."              => "....."
+    * ". // .."                 => ""
+    * ".. - .."                 => ""
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
