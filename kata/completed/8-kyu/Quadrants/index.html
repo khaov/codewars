@@ -12,7 +12,50 @@
             <span>(8 kyu)</span> Quadrants
         </h1>
         <section class="instructions">
+          <h2>Task</h2>
+          <p>Given a point in a <a href="https://en.wikipedia.org/wiki/Euclidean_plane" target="_blank">Euclidean plane</a> (<code>x</code> and <code>y</code>), return the quadrant the point exists in: <code>1</code>, <code>2</code>, <code>3</code> or <code>4</code> (integer). <code>x</code> and <code>y</code> are non-zero integers, therefore the given point never lies on the axes.</p>
 
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    (1, 2)     => 1
+    (3, 5)     => 1
+    (-10, 100) => 2
+    (-1, -9)   => 3
+    (19, -56)  => 4
+  </code>
+</pre>
+
+          <h2>Reference</h2>
+          <center>
+            <img style="background-color: #fff;" src="../../../../images/completed/8-kyu/Quadrants/01.png" alt="Quadrants">
+          </center>
+
+          <p style="text-align: center;"><i>Quadrants</i></p>
+
+          <p>There are four quadrants:</p>
+
+          <ol>
+            <li>First quadrant, the quadrant in the top-right, contains all points with positive X and Y</li>
+            <li>Second quadrant, the quadrant in the top-left, contains all points with negative X, but positive Y</li>
+            <li>Third quadrant, the quadrant in the bottom-left, contains all points with negative X and Y</li>
+            <li>Fourth quadrant, the quadrant in the bottom-right, contains all points with positive X, but negative Y</li>
+          </ol>
+
+          <p>
+            More on quadrants: <a href="https://en.wikipedia.org/wiki/Quadrant_(plane_geometry)" target="_blank">Quadrant (plane geometry) - Wikipedia</a>
+          </p>
+
+          <h2>Task Series</h2>
+          <ol>
+            <li>
+              Quadrants <i>(this kata)</i>
+            </li>
+            <li>
+              <a href="https://www.codewars.com/kata/643ea1adef815316e5389d17" target="_blank">Quadrants 2: Segments</a>
+            </li>
+          </ol>
         </section>
         <section class="notes">
           <p>
