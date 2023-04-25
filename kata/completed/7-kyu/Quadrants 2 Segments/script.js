@@ -29,6 +29,6 @@ function quadrant_segment(A, B) {
 
 // Sample Tests:
 
-// quadrant_segment(new Coord(1, 2), new Coord(3, 4)) // false
-// quadrant_segment(new Coord(9, 3), new Coord(-1, 6)) //true
+// quadrant_segment(new Coord(1, 2), new Coord(3, 4))   // false
+// quadrant_segment(new Coord(9, 3), new Coord(-1, 6))  // true
 // quadrant_segment(new Coord(-1, 6), new Coord(-9, 1)) // false
