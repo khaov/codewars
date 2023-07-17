@@ -3,15 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>(Kata kyu) Kata title</title>
         <link rel="icon" href="favicon.ico" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>
-            <span>(Kata kyu)</span> Kata title 1
-        </h1>
 
+      <header>
+        <div class="kyu">
+          <div class="kyu__badge">
+            <div class="kyu__rank">
+              <span>0 Kyu</span>
+            </div>
+          </div>
+        </div>
+        <h1>Kata title 1</h1>
+      </header>
+
+      <main>
         <section class="instructions">
           <p>
             Kata instructions
@@ -73,13 +83,15 @@
     Line 3 <span class="note"># Comment</span>
   </code>
 </pre>
-
-          <ul class="tags">
-            <li>Tag 1</li>
-            <li>Tag 2</li>
-            <li>Tag 3</li>
-          </ul>
         </section>
+      </main>
+
+      <footer>
+        <ul class="tags">
+          <li>Tag 1</li>
+          <li>Tag 2</li>
+          <li>Tag 3</li>
+        </ul>
 
         <section class="notes">
           <p class="note">
@@ -90,6 +102,8 @@
               <a href="#" target="_blank">Codewars link</a>
           </p>
         </section>
-        <script src="script.js"></script>
+      </footer>
+
+      <script src="script.js"></script>
     </body>
 </html>
