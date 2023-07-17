@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Quadrants 2: Segments</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Quadrants 2: Segments
+        </h1>
+        <section class="instructions">
+          <h2>Task</h2>
+          <p>Your task is to check whether a segment is completely in one quadrant or it crosses more. Return <code>true</code> if the segment lies in two or more quadrants. If the segment lies within only one quadrant, return <code>false</code>.</p>
+          <p>There are two parameters: <code>A</code> <i>(coord)</i> and <code>B</code> <i>(coord)</i>, the endpoints defining the segment <code>AB</code>.</p>
+          <p><b>No coordinate will be zero; expect that all X and Y are positive or negative.</b></p>
+          
+          <h2>Examples</h2>
+
+          <ol>
+            <li>
+              <p>This whole segment is in the first quadrant.</p>
+<pre>
+  <code>
+    [(1, 2), (3, 4)] -> false
+  </code>
+</pre>
+              <img src="../../../../images/completed/7-kyu/Quadrants 2 Segments/01.png" alt="Example 1">
+            </li>
+            <li>
+              <p>This segment intersects the Y axis, therefore being in two quadrants: I and II.</p>
+<pre>
+  <code>
+    [(9, 3), (-1, 6)] -> true
+  </code>
+</pre>
+              <img src="../../../../images/completed/7-kyu/Quadrants 2 Segments/02.png" alt="Example 2">
+            </li>
+            <li>
+              <p>This segment is completely in the second quadrant.</p>
+<pre>
+  <code>
+    [(-1, 6), (-9, 1)] -> false
+  </code>
+</pre>
+              <img src="../../../../images/completed/7-kyu/Quadrants 2 Segments/03.png" alt="Example 3">
+            </li>
+          </ol>
+
+          <h2>Predefined</h2>
+          <p>There is a class named <code>coord</code>/<code>Coord</code> (see in code). It has the following members:</p>
+          
+          <ul>
+            <li>
+              <p><code><i>(constructor)</i></code>: Constructs the coordinate</p>
+              <ul>
+                <li><code>x</code> <i>(number)</i>: The X coordinate</li>
+                <li><code>y</code> <i>(number)</i>: The Y coordinate</li>
+              </ul>
+            </li>
+            <li>
+              <code>x</code> <i>(number)</i>: The X coordinate
+            </li>
+            <li>
+              <code>y</code> <i>(number)</i>: The Y coordinate
+            </li>
+            <li>
+              <p><code>equal</code> <i>(bool)</i>: Compares two coordinates if they're the same</p>
+              <ul>
+                <li>
+                  <code>c</code> <i>(coord)</i>: The coordinate to compare with
+                </li>
+              </ul>
+            </li>
+            <li>
+              <code>toString</code> <i>(string)</i>: Turns coordinate into string
+            </li>
+          </ul>
+
+          <h2>Task Series</h2>
+
+          <ol>
+            <li>
+              <a href="https://www.codewars.com/kata/643af0fa9fa6c406b47c5399" target="_blank">Quadrants</a>
+            </li>
+            <li>
+              Quadrants 2: Segments (this kata)    
+            </li>
+          </ol>
+
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/643ea1adef815316e5389d17/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
