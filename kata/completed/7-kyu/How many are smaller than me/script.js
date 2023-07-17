@@ -1,10 +1,22 @@
-// Solution:
+// Solutions:
+
+// Reduce solution:
+
+// function smaller(nums) {
+//   return nums.map((currentNumber, index, array) =>
+//          nums.slice(index + 1)
+//              .reduce((sum, num) => currentNumber > num ? sum += 1 : sum, 0)
+//         );
+// }
+
+// Filter solution:
 
 function smaller(nums) {
-  return nums.map((currentNumber, index, array) =>
-         nums.slice(index + 1)
-             .reduce((sum, num) => currentNumber > num ? sum += 1 : sum, 0)
-        );
+  return nums.map((currentNumber, currentIndex) =>
+         nums.slice(currentIndex)
+            .filter(number => currentNumber > number)
+            .length
+         );
 }
 
 // Sample Tests:
