@@ -5,6 +5,7 @@
 /* Default */
 
 body {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
       "header"
@@ -244,21 +245,73 @@ hr {
 
 /* Kyu */
 
-.kyu--8 .kyu__badge{}
+.kyu--8 .kyu__badge,
+.kyu--7 .kyu__badge {
+  background-color: #e6e6e6;
+}
+.kyu--8 .kyu__badge::before,
+.kyu--7 .kyu__badge::before {
+  border-right: 8px solid #e6e6e6;
+}
+.kyu--8 .kyu__badge::after,
+.kyu--7 .kyu__badge::after {
+  border-left: 8px solid #e6e6e6;
+}
+.kyu--8 .kyu__rank,
+.kyu--7 .kyu__rank {
+  color: #e6e6e6;
+}
 
-.kyu--7 .kyu__badge{}
+.kyu--6 .kyu__badge,
+.kyu--5 .kyu__badge{
+  background-color: #ecb613;
+}
+.kyu--6 .kyu__badge::before,
+.kyu--5 .kyu__badge::before {
+  border-right: 8px solid #ecb613;
+}
+.kyu--6 .kyu__badge::after,
+.kyu--5 .kyu__badge::after {
+  border-left: 8px solid #ecb613;
+}
+.kyu--6 .kyu__rank,
+.kyu--5 .kyu__rank {
+  color: #ecb613;
+}
 
-.kyu--6 .kyu__badge{}
+.kyu--4 .kyu__badge,
+.kyu--3 .kyu__badge {
+  background-color: #1f87e7;
+}
+.kyu--4 .kyu__badge::before,
+.kyu--3 .kyu__badge::before {
+  border-right: 8px solid #1f87e7;
+}
+.kyu--4 .kyu__badge::after,
+.kyu--3 .kyu__badge::after {
+  border-left: 8px solid #1f87e7;
+}
+.kyu--4 .kyu__rank,
+.kyu--3 .kyu__rank {
+  color: #1f87e7;
+}
 
-.kyu--5 .kyu__badge{}
-
-.kyu--4 .kyu__badge{}
-
-.kyu--3 .kyu__badge{}
-
-.kyu--2 .kyu__badge{}
-
-.kyu--1 .kyu__badge{}
+.kyu--2 .kyu__badge,
+.kyu--1 .kyu__badge {
+  background-color: #866cc7;
+}
+.kyu--2 .kyu__badge::before,
+.kyu--1 .kyu__badge::before {
+  border-right: 8px solid #866cc7;
+}
+.kyu--2 .kyu__badge::after,
+.kyu--1 .kyu__badge::after {
+  border-left: 8px solid #866cc7;
+}
+.kyu--2 .kyu__rank,
+.kyu--1 .kyu__rank {
+  color: #866cc7;
+}
 
 .kyu__badge {
   position: relative;
@@ -267,7 +320,6 @@ hr {
   height: 26px;
   margin-right: 8px;
   margin-left: 8px;
-  background-color: white;
   font-weight: 700;
 }
 
@@ -283,14 +335,12 @@ hr {
 
 .kyu__badge::before {
   left: -8px;
-  border-right: 8px solid white;
   border-top: 13px solid transparent;
   border-bottom: 13px solid transparent;
 }
 
 .kyu__badge::after {
   right: -8px;
-  border-left: 8px solid white;
   border-top: 13px solid transparent;
   border-bottom: 13px solid transparent;
 }
