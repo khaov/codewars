@@ -244,6 +244,22 @@ hr {
 
 /* Kyu */
 
+.kyu--8 .kyu__badge{}
+
+.kyu--7 .kyu__badge{}
+
+.kyu--6 .kyu__badge{}
+
+.kyu--5 .kyu__badge{}
+
+.kyu--4 .kyu__badge{}
+
+.kyu--3 .kyu__badge{}
+
+.kyu--2 .kyu__badge{}
+
+.kyu--1 .kyu__badge{}
+
 .kyu__badge {
   position: relative;
   z-index: 1;
