@@ -12,7 +12,29 @@
             <span>(7 kyu)</span> Valid Spacing
         </h1>
         <section class="instructions">
+          <h2>Task</h2>
 
+          <p>Your task is to write a function called <code>valid_spacing()</code> or <code>validSpacing()</code> which checks if a string has valid spacing. The function should return either <code>true</code> or <code>false</code> (or the corresponding value in each language).</p>
+
+          <p>For this kata, the definition of valid spacing is one space between words, and no leading or trailing spaces. Words can be any consecutive sequence of non space characters. Below are some examples of what the function should return:</p>
+
+<pre>
+  <code>
+    * 'Hello world'   => true
+    * ' Hello world'  => false
+    * 'Hello world  ' => false
+    * 'Hello  world'  => false
+    * 'Hello'         => true
+
+    Even though there are no spaces, it is still valid because none are needed:
+    * 'Helloworld'    => true
+    * 'Helloworld '   => false
+    * ' '             => false
+    * ''              => true
+  </code>
+</pre>
+
+          <p><i>Note - there will be no punctuation or digits in the input string, only letters.</i></p>
         </section>
         <section class="notes">
           <p>
