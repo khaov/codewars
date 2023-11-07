@@ -12,6 +12,28 @@
             <span>(7 kyu)</span> Dictionary from two lists
         </h1>
         <section class="instructions">
+          <p>There are two lists, possibly of different lengths. The first one consists of keys, the second one consists of values. Write a function <code>createDict(keys, values)</code> that returns a dictionary created from keys and values. If there are not enough values, the rest of keys should have a <code>None</code> (<b>JS</b> <code>null</code>)value. If there not enough keys, just ignore the rest of values.</p>
+
+          <p>Example 1:</p>
+
+<pre>
+  <code>
+    keys = ['a', 'b', 'c', 'd']
+    values = [1, 2, 3]
+    createDict(keys, values) <span class="note">// returns {'a': 1, 'b': 2, 'c': 3, 'd': null}</span>
+  </code>
+</pre>
+
+
+          <p>Example 2:</p>
+
+<pre>
+  <code>
+    keys = ['a', 'b', 'c']
+    values = [1, 2, 3, 4]
+    createDict(keys, values) <span class="note">// returns {'a': 1, 'b': 2, 'c': 3}</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
