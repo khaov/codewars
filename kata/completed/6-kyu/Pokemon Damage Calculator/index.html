@@ -12,6 +12,65 @@
             <span>(6 kyu)</span> Pokemon Damage Calculator
         </h1>
         <section class="instructions">
+          <p>It's a Pokemon battle! Your task is to calculate the damage that a particular move would do using the following formula (not the actual one from the game):</p>
+
+<pre>
+  <code>
+    damage = 50 * (attack / defense) * effectiveness
+  </code>
+</pre>
+
+          <p>Where:</p>
+
+          <ul>
+            <li>attack = your attack power</li>
+            <li>defense = the opponent's defense</li>
+            <li>effectiveness = the effectiveness of the attack based on the matchup (see explanation below)</li>
+          </ul>
+
+          <p>Effectiveness:</p>
+
+          <p>Attacks can be super effective, neutral, or not very effective depending on the matchup. For example, water would be super effective against fire, but not very effective against grass.</p>
+
+          <ul>
+            <li>Super effective: 2x damage</li>
+            <li>Neutral: 1x damage</li>
+            <li>Not very effective: 0.5x damage</li>
+          </ul>
+
+          <p>To prevent this kata from being tedious, you'll only be dealing with four types: fire, water, grass, and electric. Here is the effectiveness of each matchup:</p>
+
+          <ul>
+            <li>
+              <code>fire > grass</code>
+            </li>
+            <li>
+              <code>fire < water</code>
+            </li>
+            <li>
+              <code>fire = electric</code>
+            </li>
+            <li>
+              <code>water < grass</code>
+            </li>
+            <li>
+              <code>water < electric</code>
+            </li>
+            <li>
+              <code>grass = electric</code>
+            </li>
+          </ul>
+
+          <p>For this kata, any type against itself is not very effective. Also, assume that the relationships between different types are symmetric (if <code>A</code> is super effective against <code>B</code>, then <code>B</code> is not very effective against <code>A</code>).</p>
+
+          <p>The function you must implement takes in:</p>
+
+          <ol>
+            <li>your type</li>
+            <li>the opponent's type</li>
+            <li>your attack power</li>
+            <li>the opponent's defense</li>
+          </ol>
 
         </section>
         <section class="notes">
