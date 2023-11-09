@@ -1,19 +1,48 @@
 // Solution:
 
 function calculateDamage(yourType, opponentType, attack, defense) {
-  let yourEffectiveness = {};
+  var effects = {
+    fire : {
+      fire : 0.5,
+      grass : 2,
+      water : 0.5,
+      electric : 1
+    },
+    grass : {
+      fire : 0.5,
+      grass : 0.5,
+      water : 2,
+      electric : 1
+    },
+    water : {
+      fire : 2,
+      grass : 0.5,
+      water : 0.5,
+      electric : 0.5
+    },
+    electric : {
+      fire : 1,
+      grass : 1,
+      water : 2,
+      electric : 0.5
+    }
+  };
 
-  if (yourType === "fire") {
-    yourEffectiveness = { "water": 0.5, "grass": 2, "electric": 1, "fire": 0.5 }
-  } else if (yourType === "water") {
-    yourEffectiveness = { "water": 0.5, "grass": 0.5, "electric": 0.5, "fire": 2 }
-  } else if (yourType === "grass") {
-    yourEffectiveness = { "water": 2, "grass": 0.5, "electric": 1, "fire": 0.5 }
-  } else if (yourType === "electric") {
-    yourEffectiveness = { "water": 2, "grass": 1, "electric": 0.5, "fire": 1 }
-  }
+  // let yourEffectiveness = {};
 
-  const effectiveness = yourEffectiveness[opponentType]
+  // if (yourType === "fire") {
+  //   yourEffectiveness = { "water": 0.5, "grass": 2, "electric": 1, "fire": 0.5 }
+  // } else if (yourType === "water") {
+  //   yourEffectiveness = { "water": 0.5, "grass": 0.5, "electric": 0.5, "fire": 2 }
+  // } else if (yourType === "grass") {
+  //   yourEffectiveness = { "water": 2, "grass": 0.5, "electric": 1, "fire": 0.5 }
+  // } else if (yourType === "electric") {
+  //   yourEffectiveness = { "water": 2, "grass": 1, "electric": 0.5, "fire": 1 }
+  // }
+
+  // const effectiveness = yourEffectiveness[opponentType]
+
+  const effectiveness = effects[yourType][opponentType];
 
   return 50 * (attack / defense) * effectiveness;
 }
