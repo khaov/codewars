@@ -12,7 +12,19 @@
             <span>(7 kyu)</span> Alphabetize a list by the nth character
         </h1>
         <section class="instructions">
+          <p>Write a function that accepts two parameters, i) a string (containing a list of words) and ii) an integer (n). The function should alphabetize the list based on the nth letter of each word.</p>
 
+          <p>The letters should be compared case-insensitive. If both letters are the same, order them normally (lexicographically), again, case-insensitive.</p>
+
+          <p>Example:</p>
+
+<pre>
+  <code>
+    function sortIt('bid, zag', 2) <span class="note">//=> 'zag, bid'</span>
+  </code>
+</pre>
+
+          <p>The length of all words provided in the list will be >= n. The format will be "x, x, x". In Haskell you'll get a list of <code>Strings</code> instead.</p>
         </section>
         <section class="notes">
           <p>
