@@ -12,7 +12,32 @@
             <span>(7 kyu)</span> Sectional Array Sort
         </h1>
         <section class="instructions">
+          <p>In this kata you are given an array to sort but you're expected to start sorting from a specific position of the array (in ascending order) and optionally you're given the number of items to sort.</p>
 
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    sectSort([1, 2, 5, 7, 4, 6, 3, 9, 8], 2) <span class="note">//=> [1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+    sectSort([9, 7, 4, 2, 5, 3, 1, 8, 6], 2, 5) <span class="note">//=> [9, 7, 1, 2, 3, 4, 5, 8, 6]</span>
+  </code>
+</pre>
+
+          <h2>Documentation:</h2>
+
+<pre>
+  <code>
+    sectSort(array, start, length);
+  </code>
+</pre>
+
+          <ul>
+            <li>array - array to sort</li>
+            <li>start - position to begin sorting</li>
+            <li>length - number of items to sort (optional)</li>
+          </ul>
+
+          <p>if the <b>length</b> argument is not passed or is zero, you sort all items to the right of the start position in the array</p>
         </section>
         <section class="notes">
           <p>
