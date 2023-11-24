@@ -12,7 +12,29 @@
             <span>(8 kyu)</span> Flick Switch
         </h1>
         <section class="instructions">
+          <h2>Task</h2>
 
+          <p>Create a function that always returns <code>true</code> for every item in a given list. However, if an element is the word <b>"flick"</b>, switch to always returning the opposite boolean value.</p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    ['codewars', 'flick', 'code', 'wars'] ➞ [True, False, False, False]
+          
+    ['flick', 'chocolate', 'adventure', 'sunshine'] ➞ [False, False, False, False]
+    
+    ['bicycle', 'jarmony', 'flick', 'sheep', 'flick'] ➞ [True, True, False, False, True]
+  </code>
+</pre>
+
+          <h2>Notes</h2>
+
+          <ul>
+            <li>"flick" will always be given in lowercase.</li>
+            <li>A list may contain multiple flicks.</li>
+            <li>Switch the boolean value on the same element as the flick itself.</li>
+          </ul>
         </section>
         <section class="notes">
           <p>
