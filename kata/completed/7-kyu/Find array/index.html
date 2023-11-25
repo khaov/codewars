@@ -12,7 +12,21 @@
             <span>(7 kyu)</span> Find array
         </h1>
         <section class="instructions">
+          <p>You are given two arrays <code>arr1</code> and <code>arr2</code>, where <code>arr2</code> always contains integers.</p>
 
+          <p>Write a function such that:</p>
+          
+          <p>For <code>arr1 = ['a', 'a', 'a', 'a', 'a']</code>, <code>arr2 = [2, 4]</code> the function returns <code>['a', 'a']</code></p>
+          
+          <p>For <code>arr1 = [0, 1, 5, 2, 1, 8, 9, 1, 5]</code>, <code>arr2 = [1, 4, 7]</code> the function returns <code>[1, 1, 1]</code></p>
+          
+          <p>For <code>arr1 = [0, 3, 4]</code>, <code>arr2 = [2, 6]</code> the function returns <code>[4]</code></p>
+          
+          <p>For <code>arr1=["a","b","c","d"]</code>, <code>arr2=[2,2,2]</code>, the function returns <code>["c","c","c"]</code></p>
+          
+          <p>For <code>arr1=["a","b","c","d"]</code>, <code>arr2=[3,0,2]</code> the function returns <code>["d","a","c"]</code></p>
+          
+          <p>Note that when an element inside <code>arr2</code> is greater than the index of the last element of <code>arr1</code> no element of <code>arr1</code> should be added to the resulting array. If either <code>arr1</code> or <code>arr2</code> is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.</p>
         </section>
         <section class="notes">
           <p>
