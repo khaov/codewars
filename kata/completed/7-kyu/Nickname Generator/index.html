@@ -12,6 +12,38 @@
             <span>(7 kyu)</span> Nickname Generator
         </h1>
         <section class="instructions">
+          <p>Write a function, <code>nicknameGenerator</code> that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.</p>
+          
+          <p>If the 3rd letter is a consonant, return the first 3 letters.</p>
+          
+<pre>
+  <code>
+    nickname("Robert") <span class="note">//=> "Rob"</span>
+    nickname("Kimberly") <span class="note">//=> "Kim"</span>
+    nickname("Samantha") <span class="note">//=> "Sam"</span>
+  </code>
+</pre>
+
+          <p>If the 3rd letter is a vowel, return the first 4 letters.</p>
+
+<pre>
+  <code>
+    nickname("Jeannie") <span class="note">//=> "Jean"</span>
+    nickname("Douglas") <span class="note">//=> "Doug"</span>
+    nickname("Gregory") <span class="note">//=> "Greg"</span>
+  </code>
+</pre>
+
+          <p>If the string is less than 4 characters, return "Error: Name too short".</p>
+          
+          <h2>Notes:</h2>
+
+          <ul>
+            <li>Vowels are "aeiou", so discount the letter "y".</li>
+            <li>Input will always be a string.</li>
+            <li>Input will always have the first letter capitalised and the rest lowercase (e.g. Sam).</li>
+            <li>The input can be modified</li>
+          </ul>
 
         </section>
         <section class="notes">
