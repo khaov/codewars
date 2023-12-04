@@ -1,13 +1,15 @@
 // Solution:
 
 function scramble(str, arr) {
-  let scrambleArray = [];
+  // let scrambleArray = [];
 
-  for(let i = 0; i < arr.length; i++) {
-    scrambleArray[arr[i]] = str[i];
-  }
+  // for(let i = 0; i < arr.length; i++) {
+  //   scrambleArray[arr[i]] = str[i];
+  // }
 
-  return scrambleArray.join('');
+  // return scrambleArray.join('');
+
+  return arr.map((_, index) => str[arr.indexOf(index)]).join('');
 };
 
 // Sample Tests:
