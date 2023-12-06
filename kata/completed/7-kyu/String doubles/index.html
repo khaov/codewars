@@ -12,7 +12,27 @@
             <span>(7 kyu)</span> String doubles
         </h1>
         <section class="instructions">
+          <p>In this Kata, you will write a function <code>doubles</code> that will remove double string characters that are adjacent to each other.</p>
 
+          <p>For example:</p>
+          
+          <p><code>doubles('abbcccdddda') = 'aca'</code>, because, from left to right:</p>
+
+<pre>
+  <code>
+    a) There is only one 'a' on the left hand side, so it stays.
+    b) The 2 b's disappear because we are removing double characters that are adjacent. 
+    c) Of the 3 c's, we remove two. We are only removing doubles. 
+    d) The 4 d's all disappear, because we first remove the first double, and again we remove the second double.
+    e) There is only one 'a' at the end, so it stays.
+  </code>
+</pre>
+
+          <p>Two more examples: <code>doubles('abbbzz') = 'ab'</code> and <code>doubles('abba') = ""</code>. In the second example, when we remove the b's in <code>'abba'</code>, the double <code>a</code> that results is then removed.</p>
+
+          <p>The strings will contain lowercase letters only. More examples in the test cases.</p>
+          
+          <p>Good luck!</p>
         </section>
         <section class="notes">
           <p>
