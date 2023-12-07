@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Bouncing Ball</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Bouncing Ball
+        </h1>
+        <section class="instructions">
+          <p>You drop a ball from a given height. After each bounce, the ball returns to some fixed proportion of its previous height. If the ball bounces to height 1 or less, we consider it to have stopped bouncing. Return the number of bounces it takes for the ball to stop moving.</p>
+
+<pre>
+  <code>
+    bouncingBall(initialHeight, bouncingProportion)
+          
+    boucingBall(4, 0.5)
+    After first bounce, ball bounces to height 2
+    After second bounce, ball bounces to height 1
+    Therefore answer is 2 bounces
+    
+    boucingBall(30, 0.3)
+    After first bounce, ball bounces to height 9
+    After second bounce, ball bounces to height 2.7
+    After third bounce, ball bounces to height 0.81
+    Therefore answer is 3 bounces
+  </code>
+</pre>
+
+          <p>Initial height is an integer in range [2,1000]</p>
+
+          <p>Bouncing Proportion is a decimal in range [0, 1)</p>
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/5a40c250c5e284a76400008c/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
