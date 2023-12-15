@@ -12,7 +12,17 @@
             <span>(7 kyu)</span> Check three and two
         </h1>
         <section class="instructions">
+          <p>Given an array with exactly 5 strings <code>"a"</code>, <code>"b"</code> or <code>"c"</code> (<code>chars</code> in Java, <code>characters</code> in Fortran), check if the array contains three and two of the same values.</p>
 
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    ["a", "a", "a", "b", "b"] ==> true  // 3x "a" and 2x "b"
+    ["a", "b", "c", "b", "c"] ==> false // 1x "a", 2x "b" and 2x "c"
+    ["a", "a", "a", "a", "a"] ==> false // 5x "a"
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
