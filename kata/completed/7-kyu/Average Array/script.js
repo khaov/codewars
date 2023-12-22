@@ -1,19 +1,23 @@
 // Solution:
 
 function avgArray(arr) {
-  let average = [];
+  // let average = [];
 
-  for (let i = 0; i < arr[0].length; i++) {
-    let num = 0;
+  // for (let i = 0; i < arr[0].length; i++) {
+  //   let num = 0;
 
-    for (let j = 0; j < arr.length; j++) {
-      num += arr[j][i];
-    }
+  //   for (let j = 0; j < arr.length; j++) {
+  //     num += arr[j][i];
+  //   }
 
-    average.push(num / arr.length);
-  }
+  //   average.push(num / arr.length);
+  // }
 
-  return average;
+  // return average;
+
+  return arr[0].map((_, index) =>
+    arr.reduce((sum, subArr) => sum += subArr[index], 0) / arr.length
+  );
 }
 
 // Sample Tests:
