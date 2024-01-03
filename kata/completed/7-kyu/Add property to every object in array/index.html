@@ -12,7 +12,45 @@
             <span>(7 kyu)</span> Add property to every object in array
         </h1>
         <section class="instructions">
+          <p>
+            Your task is to add a new property <code>usersAnswer</code> to every object in the array <code>questions</code>. The value of <code>usersAnswer</code> should be set to <code>null</code>. The solution should work for array of any length.
+          </p>
 
+          <p>For example:</p>
+
+<pre>
+  <code>
+    var questions = [{
+      question: "What's the currency of the USA?",
+      choices: ["US dollar", "Ruble", "Horses", "Gold"],
+      corAnswer: 0
+    }, {
+      question: "Where was the American Declaration of Independence signed?",
+      choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
+      corAnswer: 0
+    }];
+  </code>
+</pre>
+
+          <p>After adding the property the result should be:</p>
+
+<pre>
+  <code>
+    var questions = [{
+      question: "What's the currency of the USA?",
+      choices: ["US dollar", "Ruble", "Horses", "Gold"],
+      corAnswer: 0,
+      usersAnswer: null
+    }, {
+      question: "Where was the American Declaration of Independence signed?",
+      choices: ["Philadelphia", "At the bottom", "Frankie's pub", "China"],
+      corAnswer: 0,
+      usersAnswer: null
+    }];
+  </code>
+</pre>
+
+          <p>The <code>questions</code> array is already defined for you and is not the same as the one in the example.</p>
         </section>
         <section class="notes">
           <p>
