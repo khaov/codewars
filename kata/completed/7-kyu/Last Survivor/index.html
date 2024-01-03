@@ -12,7 +12,36 @@
             <span>(7 kyu)</span> Last Survivor
         </h1>
         <section class="instructions">
+          <p>
+            You are given a string of letters and an array of numbers.<br>
+            The numbers indicate positions of letters that must be removed, in order, starting from the beginning of the array.<br>
+            After each removal the size of the string decreases (there is no empty space).<br>
+            Return the only letter left.
+          </p>
 
+          <h2>Example:</h2>
+
+<pre>
+  <code>
+    let str = "zbk", arr = [0, 1]
+        str = "bk", arr = [1]
+        str = "b", arr = []
+        return 'b'
+  </code>
+</pre>
+
+          <h2>Notes</h2>
+
+          <ul>
+            <li>The given string will never be empty.</li>
+            <li>The length of the array is always one less than the length of the string.</li>
+            <li>All numbers are valid.</li>
+            <li>There can be duplicate letters and numbers.</li>
+          </ul>
+
+          <p>
+            If you like this kata, check out the next one: <a href="https://www.codewars.com/kata/60a1aac7d5a5fc0046c89651/train/javascript" target="_blank">Last Survivors Ep.2</a>
+          </p>
         </section>
         <section class="notes">
           <p>
