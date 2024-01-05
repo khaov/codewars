@@ -12,6 +12,24 @@
             <span>(7 kyu)</span> Half Life
         </h1>
         <section class="instructions">
+          <p>The <a href="https://en.wikipedia.org/wiki/Half-life" target="_blank">half-life</a> of a radioactive substance is the time it takes (on average) for one-half of its atoms to undergo radioactive decay.</p>
+
+          <h2>Task Overview</h2>
+
+          <p>Given the initial quantity of a radioactive substance, the quantity remaining after a given period of time, and the period of time, return the half life of that substance.</p>
+
+          <h2>Usage Examples</h2>
+
+<pre>
+  <code>
+    <span class="note">// if quantity halves in 1 time period, half-life = 1</span>
+    halfLife(10, 5, 1) => 1
+    <span class="note">// if quantity halves in 2 time periods, half-life = 2</span>
+    halfLife(8,4,2) => 2
+    <span class="note">// if quantity is one-quarter after 2 time periods, half-life = 1</span>
+    halfLife(12,3,2) => 1
+  </code>
+</pre>
 
         </section>
         <section class="notes">
