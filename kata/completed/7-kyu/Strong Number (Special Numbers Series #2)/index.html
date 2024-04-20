@@ -12,6 +12,32 @@
             <span>(7 kyu)</span> Strong Number (Special Numbers Series #2)
         </h1>
         <section class="instructions">
+          <p>Strong number is a number with the sum of the factorial of its digits is equal to the number itself.</p>
+
+          <p>
+            For example, 145 is strong, because <code>1! + 4! + 5! = 1 + 24 + 120 = 145</code>.
+          </p>
+
+          <h2>Task</h2>
+
+          <p>
+            Given a positive number, find if it is strong or not, and return either <code>"STRONG!!!!"</code> or <code>"Not Strong !!"</code>.
+          </p>
+
+          <h2>Examples</h2>
+          <ul>
+            <li>
+              <code>1</code> is a strong number, because <code>1! = 1</code>, so return <code>"STRONG!!!!"</code>.</li>
+            <li>
+              <code>123</code> is not a strong number, because <code>1! + 2! + 3! = 9</code> is not equal to 123, so return <code>"Not Strong !!"</code>.
+            </li>
+            <li>
+              <code>145</code> is a strong number, because <code>1! + 4! + 5! = 1 + 24 + 120 = 145</code>, so return <code>"STRONG!!!!"</code>.
+            </li>
+            <li>
+              <code>150</code> is not a strong number, because <code>1! + 5! + 0! = 122</code> is not equal to 150, so return <code>"Not Strong !!"</code>.
+            </li>
+          </ul>
 
         </section>
         <section class="notes">
