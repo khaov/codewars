@@ -3,12 +3,14 @@
 function add(arr) {
   let cerrentSum = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] += cerrentSum;
-    cerrentSum = arr[i];
-  }
+  // for (let i = 0; i < arr.length; i++) {
+  //   arr[i] += cerrentSum;
+  //   cerrentSum = arr[i];
+  // }
 
-  return arr;
+  // return arr;
+
+  return arr.map(number => cerrentSum += number);
 }
 
 // Sample Tests:
