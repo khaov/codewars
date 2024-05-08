@@ -12,7 +12,33 @@
             <span>(7 kyu)</span> Larger Product or Sum
         </h1>
         <section class="instructions">
+          <h2>Description</h2>
 
+          <p>For this Kata you will be given an array of numbers and another number <code>n</code>. You have to find the <b>sum</b> of the <code>n</code> largest numbers of the array and the <b>product</b> of the <code>n</code> smallest numbers of the array, and compare the two.</p>
+
+          <p>
+            If the sum of the <code>n</code> largest numbers is higher, return <code>"sum"</code><br>
+            If the product of the <code>n</code> smallest numbers is higher, return <code>"product"</code><br>
+            If the 2 values are equal, return <code>"same"</code>
+          </p>
+
+          <p><b>Note</b> The array will never be empty and <code>n</code> will always be smaller than the length of the array.</p>
+
+          <h2>Example</h2>
+
+<pre>
+  <code>
+    sumOrProduct([10, 41, 8, 16, 20, 36, 9, 13, 20], 3) <span class="note">// => "product"</span>
+  </code>
+</pre>
+
+          <h2>Explanation</h2>
+
+          <p>The sum of the 3 highest numbers is <code>41 + 36 + 20 = 97</code></p>
+
+          <p>The product of the lowest 3 numbers is <code>8 x 9 x 10 = 720</code></p>
+
+          <p>The product of the 3 lowest numbers is higher than the sum of the 3 highest numbers so the function returns <code>"product"</code></p>
         </section>
         <section class="notes">
           <p>
