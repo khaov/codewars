@@ -12,7 +12,20 @@
             <span>(7 kyu)</span> Divisible by previous digit?
         </h1>
         <section class="instructions">
+          <p>Take a number and check each digit if it is divisible by the digit on its left checked and return an array of booleans.</p>
+          <p>The booleans should always start with false becase there is no digit before the first one.</p>
 
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    73312        => [false, false, true, false, true]
+    2026         => [false, true, false, true]
+    635          => [false, false, false]
+  </code>
+</pre>
+
+          <p>*** Remember 0 is evenly divisible by all integers but not the other way around ***</p>
         </section>
         <section class="notes">
           <p>
