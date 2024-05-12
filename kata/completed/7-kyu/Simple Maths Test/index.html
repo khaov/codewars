@@ -12,6 +12,33 @@
             <span>(7 kyu)</span> Simple Maths Test
         </h1>
         <section class="instructions">
+          <p>Create a function which checks a number for three different properties.</p>
+
+          <ul>
+            <li>is the number prime?</li>
+            <li>is the number even?</li>
+            <li>is the number a multiple of 10?</li>
+          </ul>
+
+          <p>Each should return either true or false, which should be given as an array. Remark: The Haskell variant uses <code>data Property</code>.</p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    numberProperty(7)  <span class="note">// ==> [true,  false, false]</span>
+    numberProperty(10) <span class="note">// ==> [false, true,  true]</span>
+  </code>
+</pre>
+
+          <p>The number will always be an integer, either positive or negative. Note that negative numbers cannot be primes, but they can be multiples of 10:</p>
+
+<pre>
+  <code>
+    numberProperty(-7)  <span class="note">// ==> [false, false, false]</span>
+    numberProperty(-10) <span class="note">// ==> [false, true,  true]</span>
+  </code>
+</pre>
 
         </section>
         <section class="notes">
