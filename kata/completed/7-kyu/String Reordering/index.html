@@ -12,7 +12,24 @@
             <span>(7 kyu)</span> String Reordering
         </h1>
         <section class="instructions">
+          <p>The input will be an array of dictionaries.</p>
+          <p>Return the values as a string-seperated sentence in the order of their keys' integer equivalent (increasing order).</p>
+          <p>The keys are not reoccurring and their range is <code>-999 < key < 999</code>. The dictionaries' keys & values will always be strings and will always not be empty.</p>
 
+          <h2>Example</h2>
+
+<pre>
+  <code>
+    Input:
+    List = [
+            {'4': 'dog' }, {'2': 'took'}, {'3': 'his'},
+            {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}
+          ]
+
+    Output:
+    'Vatsan took his dog for a spin'
+  </code>
+</pre>
         </section>
         <section class="notes">
           <p>
