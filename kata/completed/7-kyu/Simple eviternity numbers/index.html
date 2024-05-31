@@ -12,7 +12,32 @@
             <span>(7 kyu)</span> Simple eviternity numbers
         </h1>
         <section class="instructions">
+          <p>An eviternity number is a number which:</p>
 
+          <ul>
+            <li>contains only digits 8, 5 and 3, and</li>
+            <li>the count of the digit <code>8</code> >= count of digit <code>5</code> >= count of digit <code>3</code>.</li>
+          </ul>
+
+          <p>The first few eviternity numbers are as follows.</p>
+
+<pre>
+  <code>
+    [8, 58, 85, 88, 358, 385, 538, 583, 588, 835, 853, 858, 885, 888]
+  </code>
+</pre>
+
+          <p>You will be given two integers, /code>a</code> and <code>b</code>, and your task is to return the number of eviternity numbers in the range <code>>= a and < b</code>.</p>
+
+<pre>
+  <code>
+    For example:
+    solve(0,1000) = 14, because they are [8, 58, 85, 88, 358, 385, 538, 583, 588, 835, 853, 858, 885, 888]
+  </code>
+</pre>
+
+          <p>The upper bound will not exceed <code>500,000</code>.</p>
+          <p>More examples in test cases. Good luck!</p>
         </section>
         <section class="notes">
           <p>
