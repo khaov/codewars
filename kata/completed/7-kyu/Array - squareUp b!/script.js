@@ -1,22 +1,19 @@
 // Solution:
 
 function squareUp(n) {
-  let array = [];
+  const base = Array(n).fill(0);
+  let sequence = [];
+  const pattern = [];
 
-  for (let i = 1; i <= n; i++) {
-    let part = [];
-
-    for (let j = 1; j <= n - i + 1; j++) {
-      part.push(j);
-    }
-
-    part.push("0".repeat(n - (n - i + 1)));
-
-    let arrayPart = part.reverse().join("");
-    array.push(arrayPart);
+  for (let i = n; i > 0; i--) {
+    sequence.push(i);
   }
 
-  return array.reverse().join("").split("").map(number => Number(number));
+  for (let i = n; i >= 0; i--) {
+    pattern.push(base.slice(0, i).concat(sequence.slice(i)))
+  }
+
+  return [].concat(...pattern.filter(item => !item.every(v => v===0)))
 }
 
 // Sample Tests:
