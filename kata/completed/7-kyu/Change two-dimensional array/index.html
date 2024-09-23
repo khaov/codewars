@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Change two-dimensional array</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Change two-dimensional array
+        </h1>
+        <section class="instructions">
+          <p>Function receive a two-dimensional square array of random integers. On the main diagonal, all the negative integers must be changed to <code>0</code>, while the others must be changed to 1 (Note: <code>0</code> is considered non-negative, here).</p>
+
+          <p>(<i>You can mutate the input if you want, but it is a better practice to not mutate the input</i>)</p>
+
+          <p>Example:</p>
+
+          <p>Input array</p>
+
+<pre>
+  <code>
+    [
+      [-1,  4, -5, -9,  3 ],
+      [ 6, -4, -7,  4, -5 ],
+      [ 3,  5,  0, -9, -1 ],
+      [ 1,  5, -7, -8, -9 ],
+      [-3,  2,  1, -5,  6 ]
+    ]
+  </code>
+</pre>
+
+          <p>Output array</p>
+
+<pre>
+  <code>
+    [
+      [ 0,  4, -5, -9,  3 ],
+      [ 6,  0, -7,  4, -5 ],
+      [ 3,  5,  1, -9, -1 ],
+      [ 1,  5, -7,  0, -9 ],
+      [-3,  2,  1, -5,  1 ]
+    ]
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/581214d54624a8232100005f/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
