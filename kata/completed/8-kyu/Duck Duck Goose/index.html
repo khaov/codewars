@@ -12,8 +12,33 @@
             <span>(8 kyu)</span> Duck Duck Goose
         </h1>
         <section class="instructions">
+          <p>The objective of <a href="https://en.wikipedia.org/wiki/Duck,_duck,_goose" target="_blank">Duck, duck, goose</a> is to <i>walk in a circle</i>, tapping on each player's head until one is chosen.</p>
 
-          <p>Good luck :)</p>
+          <hr>
+
+          <p>Task: Given an array of Player objects (an array of associative arrays in PHP) and an index (<b>1-based</b>), return the <code>name</code> of the chosen Player(<code>name</code> is a property of <code>Player</code> objects, e.g <code>Player.name</code>)</p>
+
+          <hr>
+
+          <p>Example:</p>
+
+<pre>
+  <code>
+    duck_duck_goose([a, b, c, d], 1) should return a.name
+    duck_duck_goose([a, b, c, d], 5) should return a.name
+    duck_duck_goose([a, b, c, d], 4) should return d.name
+  </code>
+</pre>
+
+<pre>
+  <code>
+    <span class="note">// PHP only</span>
+    duck_duck_goose([$a, $b, $c, $d], 1); // => $a["name"]
+    duck_duck_goose([$a, $b, $c, $d], 5); // => $a["name"]
+    duck_duck_goose([$a, $b, $c, $d], 4); // => $d["name"]
+  </code>
+</pre>
+
         </section>
         <section class="notes">
           <p>
