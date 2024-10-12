@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) The wheat/rice and chessboard problem</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+          <span>(7 kyu)</span> The wheat/rice and chessboard problem
+        </h1>
+        <section class="instructions">
+          <p>I assume most of you are familiar with the ancient legend of the rice (but I see wikipedia suggests <a href="https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem" target="_blank">wheat</a>, for some reason) problem, but a quick recap for you: a young man asks as a compensation only <code>1</code> grain of rice for the first square, <code>2</code> grains for the second, <code>4</code> for the third, <code>8</code> for the fourth and so on, always doubling the previous.</p>
+
+          </p>Your task is pretty straightforward (but not necessarily easy): given an amount of grains, you need to return up to which square of the chessboard one should count in order to get at least as many.</p>
+
+          <p>As usual, a few examples might be way better than thousands of words from me:</p>
+
+<pre>
+  <code>
+    0 grains need 0 cells
+    1 grain needs 1 cell
+    2 grains need 2 cells
+    3 grains need 2 cells
+    4 grains need 3 cells
+    and etc.
+  </code>
+</pre>
+
+          <p>Input is always going to be valid/reasonable: ie: a non negative number; extra cookie for not using a loop to compute square-by-square (at least not directly) and instead trying a smarter approach [hint: some peculiar operator]; a trick converting the number might also work: impress me!</p>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
