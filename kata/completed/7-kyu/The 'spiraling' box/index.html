@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) The 'spiraling' box</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+          <span>(7 kyu)</span> The 'spiraling' box
+        </h1>
+        <section class="instructions">
+          <h2>Task</h2>
+
+          <p>Given two positive integers <code>m (width)</code> and <code>n (height)</code>, fill a two-dimensional list (or array) of size <code>m-by-n</code> in the following way:</p>
+
+          <ul>
+            <li>(1) All the elements in the first and last row and column are 1.</li>
+            <li>(2) All the elements in the second and second-last row and column are 2, excluding the elements from step 1.</li>
+            <li>(3) All the elements in the third and third-last row and column are 3, excluding the elements from the previous steps.</li>
+            <li>And so on ...</li>
+          </ul>
+
+          <h2>Examples</h2>
+
+          <p>Given m = 5, n = 8, your function should return</p>
+
+<pre>
+  <code>
+    [[1, 1, 1, 1, 1],
+    [1, 2, 2, 2, 1],
+    [1, 2, 3, 2, 1],
+    [1, 2, 3, 2, 1],
+    [1, 2, 3, 2, 1],
+    [1, 2, 3, 2, 1],
+    [1, 2, 2, 2, 1],
+    [1, 1, 1, 1, 1]]
+  </code>
+</pre>
+
+          <p>Given m = 10, n = 9, your function should return</p>
+
+<pre>
+  <code>
+    [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 2, 3, 3, 3, 3, 3, 3, 2, 1],
+    [1, 2, 3, 4, 4, 4, 4, 3, 2, 1],
+    [1, 2, 3, 4, 5, 5, 4, 3, 2, 1],
+    [1, 2, 3, 4, 4, 4, 4, 3, 2, 1],
+    [1, 2, 3, 3, 3, 3, 3, 3, 2, 1],
+    [1, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+  </code>
+</pre>
+
+          <p><a href="https://www.codewars.com/kata/5c09ccc9b48e912946000157" target="_blank">Bird mountain</a> generalizes this kata in a fun way.</p>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/63b84f54693cb10065687ae5/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
