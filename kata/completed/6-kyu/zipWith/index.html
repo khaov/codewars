@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(6 kyu) zipWith</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+          <span>(6 kyu)</span> zipWith
+        </h1>
+        <section class="instructions">
+          <h2>Task</h2>
+
+          <p>
+            <code>zipWith</code> ( or <code>zip_with</code> ) takes a function and two arrays and zips the arrays together, applying the function to every pair of values.<br>
+            The function value is one new array.
+          </p>
+
+          <p>
+            If the arrays are of unequal length, the output will only be as long as the shorter one.<br>
+            (Values of the longer array are simply not used.)
+          </p>
+
+          <p>Inputs should not be modified.</p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    zipWith( Math.pow, [10,10,10,10], [0,1,2,3] )      =>  [1,10,100,1000]
+    zipWith( Math.max, [1,4,7,1,4,7], [4,7,1,4,7,1] )  =>  [4,7,7,4,7,7]
+
+    zipWith( function(a,b) { return a+b; }, [0,1,2,3], [0,1,2,3] )  =>  [0,2,4,6]  <span class="note">// Both forms are valid</span>
+    zipWith( (a,b) => a+b,                  [0,1,2,3], [0,1,2,3] )  =>  [0,2,4,6]  <span class="note">// Both are functions</span>
+  </code>
+</pre>
+
+          <h2>Input validation</h2>
+
+          <p>Assume all input is valid.</p>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/5825792ada030e9601000782/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
