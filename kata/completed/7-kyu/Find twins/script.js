@@ -6,7 +6,7 @@ function elimination(arr) {
   )[0];
 
   return twin ? twin : null;
-
+}
 // Sample Tests:
 
 elimination([2,5,34,1,22,1])  // 1, "twins are 1s"
