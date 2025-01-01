@@ -6,10 +6,13 @@ function solve(s){
   let changes = [s];
 
   for(let i = 0; i < s.length; i++) {
+    let lastChange = changes[changes.length-1];
+
     if (s[i] == "a") {
-      changes.push(
-        changes[changes.length-1]
-      )
+      lastChange.split('')[i]
+
+      changes.push()
+
     } else if(s[i] == "z") {
 
     } else {
