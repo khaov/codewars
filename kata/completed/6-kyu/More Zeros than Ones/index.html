@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(6 kyu) More Zeros than Ones</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+          <span>(6 kyu)</span> More Zeros than Ones
+        </h1>
+        <section class="instructions">
+          <p>
+            Create a <b>moreZeros</b> function which will <b>receive a string</b> for input, and <b>return an array</b> (or null terminated string in C) containing only the characters from that string whose <b>binary representation of its ASCII value</b> consists of <i>more zeros than ones</i>.
+          </p>
+
+          <p>
+            You should <b>remove any duplicate characters</b>, keeping the <b>first occurrence</b> of any such duplicates, so they are in the <b>same order</b> in the final array as they first appeared in the input string.
+          </p>
+
+          <p>Examples</p>
+
+<pre>
+  <code>
+    'abcde' === ["1100001", "1100010", "1100011", "1100100", "1100101"]
+                  True       True       False      True       False
+
+            <span class="note">--> ['a','b','d']</span>
+
+    'DIGEST'--> ['D','I','E','T']
+  </code>
+</pre>
+
+
+          <p>All input will be valid strings of length > 0. Leading zeros in binary should not be counted.</p>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/5d41e16d8bad42002208fe1a/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

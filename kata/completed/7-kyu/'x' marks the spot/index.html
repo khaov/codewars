@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) 'x' marks the spot.</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> 'x' marks the spot.
+        </h1>
+        <section class="instructions">
+          <h2>Task:</h2>
+
+          <p>Given a two dimensional array, return the co-ordinates of <code>x</code>.</p>
+
+          <p>If <code>x</code> is not inside the array, or if <code>x</code> appears multiple times, return <code>[]</code>.</p>
+
+          <p>
+            The co-ordinates should be zero indexed in row-major order.<br>
+            You should assume you will always get an array as input. The array will only contain <code>'x'</code>s and <code>'o'</code>s.
+          </p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    Input: []
+  </code>
+</pre>
+
+          <p>Return an empty array if input is an empty array => []</p>
+
+<pre>
+  <code>
+    Input: [
+      ['o', 'o'],
+      ['o', 'o']
+    ]
+  </code>
+</pre>
+
+          <p>Return an empty array if no x found => []</p>
+
+<pre>
+  <code>
+    Input: [
+      ['x', 'o'],
+      ['o', 'x']
+    ]
+  </code>
+</pre>
+
+          <p>Return an empty array if more than one x found => []</p>
+
+<pre>
+  <code>
+    Input: [
+      ['x', 'o'],
+      ['o', 'o']
+    ]
+    Return [0,0] when x at top left => [0, 0]
+
+    Input: [
+      ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+      ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+      ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+      ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+      ['o', 'o', 'o', 'o', 'o', 'o', 'x', 'o'],
+      ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
+    ]
+    Return [4,6] for the example above => [4, 6]
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/5777fe3f355edbf0a5000d11/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
