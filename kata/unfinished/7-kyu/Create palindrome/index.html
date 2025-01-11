@@ -12,7 +12,30 @@
             <span>(7 kyu)</span> Create palindrome
         </h1>
         <section class="instructions">
+          <p>Consider the string <code>"adfa"</code> and the following rules:</p>
 
+<pre>
+  <code>
+    a) each character MUST be changed either to the one before or the one after in alphabet.
+    b) "a" can only be changed to "b" and "z" to "y".
+  </code>
+</pre>
+
+          <p>From our string, we get:</p>
+
+<pre>
+  <code>
+    "adfa" -> ["begb","beeb","bcgb","bceb"]
+
+    Here is another example:
+    "bd" -> ["ae","ac","ce","cc"]
+
+    --We see that in each example, one of the outcomes is a palindrome. That is, "beeb" and "cc".
+  </code>
+</pre>
+          <p>You will be given a lowercase string and your task is to return <code>True</code> if at least one of the outcomes is a palindrome or <code>False</code> otherwise.</p>
+
+          <p>More examples in test cases. Good luck!</p>
         </section>
         <section class="notes">
           <p>

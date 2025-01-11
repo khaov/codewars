@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(8 kyu) Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+          <span>(8 kyu)</span> Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+        </h1>
+        <section class="instructions">
+          <h2>Description:</h2>
+
+          <p>Remove <code>n</code> exclamation marks in the sentence from left to right. <code>n</code> is positive integer.</p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    remove("Hi!",1) === "Hi"
+    remove("Hi!",100) === "Hi"
+    remove("Hi!!!",1) === "Hi!!"
+    remove("Hi!!!",100) === "Hi"
+    remove("!Hi",1) === "Hi"
+    remove("!Hi!",1) === "Hi!"
+    remove("!Hi!",100) === "Hi"
+    remove("!!!Hi !!hi!!! !hi",1) === "!!Hi !!hi!!! !hi"
+    remove("!!!Hi !!hi!!! !hi",3) === "Hi !!hi!!! !hi"
+    remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
+    remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/57faf7275c991027af000679/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
