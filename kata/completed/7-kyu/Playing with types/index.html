@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Playing with types</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Playing with types
+        </h1>
+        <section class="instructions">
+          <p>JavaScript is a <b>dynamically typed</b> programming language. This means that you don't have to specify what kind of information a variable contains, but sometimes it's useful to know it.</p>
+
+          <p>You have to implement a <b>typing()</b> function that takes a parameter and is able to tell the <b>type</b> and <b>value</b> of it.</p>
+
+          </p>For example:</p>
+
+<pre>
+  <code>
+    typing(2);            <span class="note">//returns "number=2"</span>
+    typing(true);         <span class="note">//returns "boolean=true"</span>
+    typing("test");       <span class="note">//returns "string="test""</span>
+    typing([1,2,3]);      <span class="note">//returns "object=[1,2,3]"</span>
+    typing({a:1,b:2});    <span class="note">//returns "object={"a":1,"b":2}"</span>
+    typing(function(){}); <span class="note">//returns "function=function (){}"</span>
+    typing(undefined);    <span class="note">//returns "undefined"</span>
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/543e308b23ccbda148001526/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
