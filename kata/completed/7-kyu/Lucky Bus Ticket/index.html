@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Lucky Bus Ticket</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Lucky Bus Ticket
+        </h1>
+        <section class="instructions">
+          <p>In Russia regular bus tickets usually consist of 6 digits. The ticket is called lucky when the sum of the first three digits equals to the sum of the last three digits. Write a function to find out whether the ticket is lucky or not. Return true if so, otherwise return false. Consider that input is always a string. Watch examples below.</p>
+
+<pre>
+  <code>
+    isLucky('123321') => 1+2+3 = 3+2+1 => true <span class="note">// The ticket is lucky</span>
+    isLucky('12341234') => false <span class="note">// Only six-digit numbers allowed :(</span>
+    isLucky('12a21a') => false <span class="note">// Letters are not allowed :(</span>
+    isLucky('100200') => false <span class="note">// :(</span>
+    isLucky('22') => false <span class="note">// :(</span>
+    isLucky('abcdef') => false <span class="note">// :(</span>
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/58902f676f4873338700011f/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
