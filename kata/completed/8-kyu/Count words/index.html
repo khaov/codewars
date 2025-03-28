@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(8 kyu) Count words</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(8 kyu)</span> Count words
+        </h1>
+        <section class="instructions">
+
+          <p>Can you implement a function that will return number of words in a string?</p>
+
+          <p>You have to ensure that spaces in string is a whitespace for real.</p>
+
+          <p>Let's take a look on some examples:</p>
+
+<pre>
+  <code>
+    countWords("Hello"); <span class="note">// returns 1 as int</span>
+    countWords("Hello, World!") <span class="note">// returns 2</span>
+    countWords("No results for search term `s`") <span class="note">// returns 6</span>
+    countWords(" Hello") <span class="note">// returns 1</span>
+    <span class="note">// ... and so on</span>
+  </code>
+</pre>
+
+          <p>What kind of tests we made for your code:</p>
+
+          <ol>
+            <li>Function have to count words and not spaces. You have to be sure that you doing it right</li>
+            <li>Empty string has no words.</li>
+            <li>String with spaces around should be trimmed.</li>
+            <li>Non-whitespace (ex. breakspace, unicode chars) should be treated as a delimiter</li>
+            <li>Doublecheck that words with chars like -, ', ` are counted right.</li>
+          </ol>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/570cc83df616a85944001315/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
