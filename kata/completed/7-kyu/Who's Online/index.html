@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Who's Online?</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Who's Online?
+        </h1>
+        <section class="instructions">
+          <p>You have a group chat application, but who is online!?</p>
+
+          <p>You want to show your users which of their friends are online and available to chat!</p>
+
+          <p>Given an input of an array of objects containing usernames, status and time since last activity (in mins), create a function to work out who is <code>online</code>, <code>offline</code> and <code>away</code>.</p>
+
+          <p>If someone is <code>online</code> but their <code>lastActivity</code> was more than 10 minutes ago they are to be considered <code>away</code>.</p>
+
+          <p>The input data has the following structure:</p>
+
+<pre>
+  <code>
+    [{
+      username: 'David',
+      status: 'online',
+      lastActivity: 10
+    }, {
+      username: 'Lucy',
+      status: 'offline',
+      lastActivity: 22
+    }, {
+      username: 'Bob',
+      status: 'online',
+      lastActivity: 104
+    }]
+  </code>
+</pre>
+
+          <p>The corresponding output should look as follows:</p>
+
+<pre>
+  <code>
+    {
+      online: ['David'],
+      offline: ['Lucy'],
+      away: ['Bob']
+    }
+  </code>
+</pre>
+
+          <p>If for example, no users are <code>online</code> the output should look as follows:</p>
+
+<pre>
+  <code>
+    {
+      offline: ['Lucy'],
+      away: ['Bob']
+    }
+  </code>
+</pre>
+
+          <p>username will always be a <code>string</code>, status will always be either <code>'online'</code> or <code>'offline'</code> (UserStatus enum in C#) and lastActivity will always be <code>number >= 0</code>.</p>
+
+          <p>Finally, if you have no friends in your chat application, the input will be an empty array <code>[]</code>. In this case you should return an empty object <code>{}</code> (empty Dictionary in C#).</p>
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/5b6375f707a2664ada00002a/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
