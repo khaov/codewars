@@ -1,13 +1,7 @@
 // Solution:
 
 function numObj(s) {
-  const objects = Array.from({length:s.length}, x => x = {});
-  let values = [];
-
-  s.forEach(number => values.push(String.fromCharCode(number)))
-  objects.map((object, index) => object[s[index]] = values[index]);
-
-  return objects;
+  return s.map(number => number = {[number]: String.fromCharCode(number)});
 }
 
 // Sample Tests:
