@@ -1,22 +1,18 @@
 // Solution:
 
 function dominator(arr) {
-  let dominator = -1;
-  let repeat = {};
+  let repeat = [];
 
   const length = arr.length / 2;
-  const unique = arr.filter((number, index, array) => index == array.lastIndexOf(number))
+  const unique = arr.filter((number, index, array) => index == array.lastIndexOf(number));
 
-  unique.forEach(uniqueNumber => repeat[uniqueNumber] = arr.filter(number => number == uniqueNumber).length);
+  unique.forEach(uniqueNumber =>
+    repeat.push([uniqueNumber, arr.filter(number => number == uniqueNumber).length])
+  );
 
-  for (let key of Object.keys(repeat)) {
-    if (repeat[key] > length) {
-      dominator = Number(key);
-      break;
-    }
-  }
+  const dominator = repeat.find(repetition => repetition[1] > length);
 
-  return dominator;
+  return dominator ? Number(dominator[0]) : -1;
 }
 
 // Sample Tests:
