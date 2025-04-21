@@ -1,16 +1,10 @@
 // Solution:
 
 function dominator(arr) {
-  let repeat = [];
-
   const length = arr.length / 2;
-  const unique = arr.filter((number, index, array) => index == array.lastIndexOf(number));
 
-  unique.forEach(uniqueNumber =>
-    repeat.push([uniqueNumber, arr.filter(number => number == uniqueNumber).length])
-  );
-
-  const dominator = repeat.find(repetition => repetition[1] > length);
+  const repeation = Object.entries(arr.reduce((acc, value) => ({ ...acc, [value]: (acc[value] || 0) + 1 }), {}));
+  const dominator = repeation.find(([_, value]) => value > length);
 
   return dominator ? Number(dominator[0]) : -1;
 }
