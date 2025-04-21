@@ -1,22 +1,23 @@
 // Solution:
 
 function dominator(arr) {
-  const length = arr.length / 2;
+  let arrDominator = 0;
+  let integersValue = 0;
 
-  let repeat = {};
-  let dominator = 0;
+  const arrHalf = arr.length / 2;
 
-  arr.forEach(number => {
-    repeat[number] = repeat[number] ? repeat[number] + 1 : 1
-  });
+  for (let i = 0; i < arr.length; i++) {
+     integersValue = arr.filter(num => num == arr[i]).length;
 
-  Object.keys(repeat).forEach(key => {
-    if (repeat[key] > length) {
-      dominator = Number(key);
+    if (integersValue > arrHalf) {
+      arrDominator = arr[i];
+      break;
+    } else {
+      arrDominator = -1;
     }
-  });
+  }
 
-  return dominator ? dominator : -1;
+  return arrDominator;
 }
 
 // Sample Tests:
