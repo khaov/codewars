@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Search for letters</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Search for letters
+        </h1>
+        <section class="instructions">
+          <p>Create a function which accepts one arbitrary string as an argument, and return a string of length 26.</p>
+
+          <p>The objective is to set each of the 26 characters of the output string to either <code>'1'</code> or <code>'0'</code> based on the fact whether the Nth letter of the alphabet is present in the input (independent of its case).</p>
+
+          <p>So if an <code>'a'</code> or an <code>'A'</code> appears anywhere in the input string (any number of times), set the first character of the output string to <code>'1'</code>, otherwise to <code>'0'</code>. if <code>'b'</code> or <code>'B'</code> appears in the string, set the second character to <code>'1'</code>, and so on for the rest of the alphabet.</p>
+
+          <p>For instance:</p>
+<pre>
+  <code>
+    "a   **&  cZ"  =>  "10100000000000000000000001"
+  </code>
+</pre>
+
+<pre>
+  <code>
+    "aaaaaaa79345675"  =>  "10000000000000000000000000"
+  </code>
+</pre>
+
+<pre>
+  <code>
+    "&%#*"  =>  "00000000000000000000000000"
+  </code>
+</pre>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/52dbae61ca039685460001ae/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
