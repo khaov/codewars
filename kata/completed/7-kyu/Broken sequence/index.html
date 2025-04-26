@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Broken sequence</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Broken sequence
+        </h1>
+        <section class="instructions">
+          <p>You receive some random elements as a space-delimited string. Check if the elements are part of an ascending sequence of integers starting with 1, with an increment of 1 (e.g. 1, 2, 3, 4).</p>
+
+          <p>Return:</p>
+
+          <ul>
+            <li><code>0</code> if the elements can form such a sequence, and no number is missing ("not broken", e.g. <code>"1 2 4 3"</code>)</li>
+            <li><code>1</code> if there are any non-numeric elements in the input ("invalid", e.g. <code>"1 2 a"</code>)</li>
+            <li><code>n</code> if the elements are part of such a sequence, but some numbers are missing, and <code>n</code> is the lowest of them ("broken", e.g. <code>"1 2 4"</code> or <code>"1 5"</code>)</li>
+          </ul>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    "1 2 3 4"  ==>  return 0, because the sequence is complete
+
+    "1 2 4 3"  ==>  return 0, because the sequence is complete (order doesn't matter)
+
+    "2 1 3 a"  ==>  return 1, because it contains a non numerical character
+
+    "1 3 2 5"  ==>  return 4, because 4 is missing from the sequence
+
+    "1 5"      ==>  return 2, because the sequence is missing 2, 3, 4 and 2 is the lowest
+  </code>
+</pre>
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/5512e5662b34d88e44000060/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
