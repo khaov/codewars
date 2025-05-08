@@ -6,7 +6,6 @@ function scrabbleScore(str){
             .filter(value => value !== undefined)
             .reduce((sum, num) => sum += num, 0);
 }
-
 // Sample Tests:
 
 scrabbleScore("")         // 0

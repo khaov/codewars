@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Scrabble Score</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Scrabble Score
+        </h1>
+        <section class="instructions">
+          <p>Write a program that, given a word, computes the scrabble score for that word.</p>
+
+          <h2>Letter Values</h2>
+
+          <p>You'll need these:</p>
+
+<pre>
+  <code>
+    Letter                           Value
+    A, E, I, O, U, L, N, R, S, T       1
+    D, G                               2
+    B, C, M, P                         3
+    F, H, V, W, Y                      4
+    K                                  5
+    J, X                               8
+    Q, Z                               10
+  </code>
+</pre>
+
+          <p>There will be a preloaded hashtable <code>$dict</code> with all these values: <code>$dict["E"] == 1</code>.</p>
+
+          <h2>Examples</h2>
+
+<pre>
+  <code>
+    "cabbage" --> 14
+  </code>
+</pre>
+
+          <p>"cabbage" should be scored as worth 14 points:</p>
+
+          <ul>
+            <li>3 points for C</li>
+            <li>1 point for A, twice</li>
+            <li>3 points for B, twice</li>
+            <li>2 points for G</li>
+            <li>1 point for E</li>
+          </ul>
+
+          <p>And to total:</p>
+
+          <p>
+            <code>3 + 2*1 + 2*3 + 2 + 1</code> = <code>3 + 2 + 6 + 3</code> = <code>14</code>
+          </p>
+
+          <p>Empty string should return 0. The string can contain spaces and letters (upper and lower case), you should calculate the scrabble score only of the letters in that string.</p>
+
+<pre>
+  <code>
+    ""           --> 0
+    "STREET"    --> 6
+    "st re et"    --> 6
+    "ca bba g  e" --> 14
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+              <a href="https://www.codewars.com/kata/558fa34727c2d274c10000ae/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
