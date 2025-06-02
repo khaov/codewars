@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>(7 kyu) Compare Strings by Sum of Chars</title>
+      <link rel="icon" href="../../../../template/favicon.ico" />
+      <link rel="stylesheet" href="../../../../template/style.css">
+    </head>
+    <body>
+        <h1>
+            <span>(7 kyu)</span> Compare Strings by Sum of Chars
+        </h1>
+        <section class="instructions">
+          <p>Compare two strings by comparing the sum of their values (ASCII character code).</p>
+
+          <ul>
+            <li>For comparing treat all letters as UpperCase</li>
+            <li><code>null/NULL/Nil/None</code> should be treated as empty strings</li>
+            <li>If the string contains other characters than letters, treat the whole string as it would be empty</li>
+          </ul>
+
+          <p>Your method should return <code>true</code>, if the strings are equal and <code>false</code> if they are not equal.</p>
+
+          <h2>Examples:</h2>
+
+<pre>
+  <code>
+    "AD", "BC"  -> equal
+    "AD", "DD"  -> not equal
+    "gf", "FG"  -> equal
+    "zz1", ""   -> equal (both are considered empty)
+    "ZzZz", "ffPFF" -> equal
+    "kl", "lz"  -> not equal
+    null, ""    -> equal
+  </code>
+</pre>
+
+        </section>
+        <section class="notes">
+          <p>
+            <a href="https://www.codewars.com/kata/576bb3c4b1abc497ec000065/train/javascript" target="_blank">Codewars link</a>
+          </p>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
